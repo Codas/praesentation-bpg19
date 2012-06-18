@@ -1,0 +1,67 @@
+@import "mixins";
+
+body {
+  font-family: '', 'PT Sans', sans-serif;
+  background-image: -webkit-radial-gradient(hsla(0, 0, 0, 0), hsla(90, 66%, 20%, 0.4)), url('../img/bg.png');
+}
+
+.step {
+  font-family: 'Georgia', 'PT Serif', georgia, serif;
+}
+
+#title {
+  padding: 0;
+  padding-left: 100px;
+
+  .privacy {
+    font-size: 84px;
+    position: absolute;
+    left: 192px;
+    top: -14px;
+    @include translate-z(20px);
+  }
+
+  h1 {
+    font-size: 190px;
+    @include translate-z(50px);
+    text-shadow: 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  h2 {
+    font-family: "PT Sans";
+    font-weight: bold;
+    position: absolute;
+    font-size: 78px;
+    left: -240px;
+    top: 160px;
+    color: transparent;
+    text-shadow: 0 0 7px rgba(0,0,0,0.6);
+    @include rotate(-90deg);
+  }
+
+  .noisemap {
+    font-size: 62px;
+    position: relative;
+    top: -1.3em;
+    left: 92px;
+    @include translate-z(20px);
+  }
+
+  .footnote {
+    font-family: "Open Sans";
+    font-size: 32px;
+    margin-top: -50px;
+    color: #444;
+    @include translate-z(-20px)
+  }
+}
+
+#da-sense {
+  width: 1125px;
+  h2 {
+   font-size: 1.875em;
+  }
+  img {
+    @include translate-z(-20px);
+  }
+}

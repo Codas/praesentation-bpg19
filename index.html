@@ -1,86 +1,37 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta content="width=1024" name="viewport" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
-
     <title>Bachelor Praktikum SoSe 2012 Gruppe 19</title>
-
     <link href="favicon.png" rel="shortcut icon" />
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
-    <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
   </head>
-
-  <body>
-    <div id="impress">
-      <!-- Hier kommen die eigentlichen Slides rein -->
-
-      <!-- nur eine Beispiel Slide als Hilfestellung -->
-      <div class="step" data-x="-1000" data-y="-1500" id="title">
-        <p>Titelfolie</p>
-      </div>
-      <!-- / Beispielsslide -->
-
-      <div class="step" data-x="0" data-y="-1500" id="da_sense">
-        <p>Was ist da_sense</p>
-      </div>
-
-      <div class="step" data-x="1000" data-y="-1500" id="noisemap">
-        <p>Was ist Noisemap</p>
-      </div>
-
-      <div class="step" data-x="2000" data-y="-1500" id="problem">
-        <p>Was ist das Problem</p>
-      </div>
-
-      <div class="step" data-x="3000" data-y="-1500" id="why_privacy">
-        <p>Warum ist Privacy wichtig</p>
-      </div>
-
-      <div class="step" data-x="4000" data-y="-1500" id="task1">
-        <p>Unsere Aufgabe: PETs, Sandbox</p>
-      </div>
-
-      <div class="step" data-x="5000" data-y="-1500" id="task2">
-        <p>Unsere Aufgabe: Modularität</p>
-      </div>
-
-
-      <div class="step" data-x="6000" data-y="-1500" id="our_techs">
-        <p>Titelfolie "Unsere Technologien"</p>
-      </div>
-
-      <div class="step" data-x="7000" data-y="-1500" id="tor">
-        <p>Tor/Orbot: kurz sinn erklären</p>
-      </div>
-
-      <div class="step" data-x="7000" data-y="-4000" id="tor0">
-      </div>
-
-      <div class="step" data-x="7000" data-y="-4000" data-scale="2" id="tor1">
-      </div>
-
-      <div class="step" data-x="7000" data-y="-4000" data-scale="3" id="tor2">
-        <p>packetbild</p>
-      </div>
-
-      <div class="step" data-x="7000" data-y="-4000" data-scale="2" id="tor1.1">
-      </div>
-
-      <div class="step" data-x="7000" data-y="-4000" data-scale="1" id="tor0.1">
-      </div>
-
-      <div class="step" data-x="8000" data-y="-1500" id="oauth">
-        <p>OAuth</p>
-      </div>
-
-      <!-- Ende der Präsentation slides -->
+  <div id="impress">
+    <!--nur eine Beispiel Slide als Hilfestellung-->
+    <div class="step" data-x="0" data-y="0" id="title">
+      <span class="privacy">privacy for</span>
+      <h1>da-sense</h1>
+      <span class="noisemap">und Noisemap</span>
+      <h2>BP Gruppe 19</h2>
+      <p class="footnote">Arne Link, Elham Afghanyar, Jerome Reinländer, Maurice Gregor, Stephan Spielmal</p>
     </div>
-    <script src="js/impress.js"></script>
-    <script>impress().init();</script>
-  </body>
+    <!--/ Beispielsslide-->
+    <div class="step" data-rotate="17" data-x="1500" data-y="350" id="da-sense">
+      <h2>Was ist da-sense?</h2>
+      <img src="img/da-sense.png" />
+    </div>
+    <div class="step" data-rotate="17" data-x="1500" data-y="350" id="da-sense">
+      <h2>Was ist da-sense?</h2>
+      <img src="img/da-sense.png" />
+    </div>
+    <div class="step" data-x="1000" data-y="-1500" id="noisemap">
+      <p>Was ist Noisemap</p>
+    </div>
+  </div>
+  <script src="js/impress.js"></script>
+  <script>impress().init();</script>
 </html>
