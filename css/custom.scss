@@ -2,6 +2,12 @@
 
 body {
   font-family: 'Open Sans', 'PT Sans', sans-serif;
+  background: transparent;
+  background-image: transparent;
+  @include transition(background 1s);
+}
+
+html {
   background-image: -webkit-radial-gradient(hsla(90, 75%, 0, 0), hsla(90, 75%, 15%, 0.45)), url('../img/bg.png');
 }
 
@@ -180,9 +186,17 @@ body.impress-on-noisemap-outro {
   }
 }
 
-// body.impress-on-movement-profile {
-//   background-image: -webkit-radial-gradient(hsla(0, 100%, 10%, 0.4), hsla(0, 95%, 20%, 0.8)), url('../img/bg-red.png');
-// }
+body.impress-on-movement-profile {
+  background: hsla(0, 95%,  35%, 0.60);
+  -webkit-animation: pulsate 2s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+}
+@-webkit-keyframes pulsate {
+  0%   { background: hsla(0, 95%,  35%, 0.60); }
+  50%  { background: hsla(0, 100%, 30%, 0.85); }
+  100% { background: hsla(0, 95%,  35%, 0.60); }
+}
 
 #movement-profile {
   border: 2px solid #C00;
