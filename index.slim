@@ -64,24 +64,25 @@ html
 
     #noisemap-outro.step data-x="3800" data-y="1450" data-scale="3"
       .content
-        div.alle ganze
-        div.func Funktionalität
-        div.available bereits vorhanden
+        .alle Alle
+        .func Funktionen
+        .available bereits implementiert
+        .excl !
 
-    #privacy-intro.step data-x="3800" data-y="2700"
-      p.big.center.semibold
-        ' Aber
-        span.red nicht ganz so
-        | , wie es sollte
+    #privacy-intro.step data-x="3800" data-y="2760" data-scale="3"
+      .content
+        .intro Vernachlässigt wird nur die
+        .privacy Privacy
+        .outro Der benutzer
 
-    #movement-profile.step data-x="3800" data-y="3600"
+    #movement-profile.step data-x="3800" data-y="4800"
       img src="img/why-privacy.png" height="650"
 
-    #privacy-sony.step data-x="3800" data-y="3600" data-z="1200"
+    #privacy-sony.step data-x="3800" data-y="5100" data-z="1800"
       h3 Beispiel Sony 2011
       blockquote
         ' Adresse, Kreditkartennummer, Geburtstag, Passworte:
-        ' Fast 77 Millionen Sony-Kunden bangen nach dem Angriff
+        ' Fast <span class="red">77 Millionen</span> Sony-Kunden bangen nach dem Angriff
         ' auf das Playstation-System um ihre persönlichen Daten
         ' [...]
       span.author
