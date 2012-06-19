@@ -89,10 +89,11 @@ ul {
   padding: 0;
   padding-left: 100px; }
   #title .privacy {
-    font-family: "PT Sans";
+    font-family: "Open Sans";
     font-size: 84px;
     position: absolute;
-    left: 192px;
+    font-weight: 600;
+    left: 195px;
     top: -14px;
     -webkit-transform: translateZ(20px);
     -moz-transform: translateZ(20px);
@@ -112,7 +113,7 @@ ul {
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
   #title h2 {
     margin: 0;
-    font-family: "PT Sans";
+    font-family: "Open Sans";
     font-weight: bold;
     position: absolute;
     font-size: 78px;
@@ -126,11 +127,12 @@ ul {
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg); }
   #title .noisemap {
-    font-family: "PT Serif";
+    font-family: "Open Sans";
     font-size: 62px;
     position: relative;
     top: -1.3em;
-    left: 92px;
+    left: 90px;
+    font-weight: 600;
     -webkit-transform: translateZ(20px);
     -moz-transform: translateZ(20px);
     -ms-transform: translateZ(20px);
@@ -211,7 +213,7 @@ body.impress-on-noisemap-outro #noisemap-intro, body.impress-on-noisemap-outro #
   body.impress-on-noisemap-outro #noisemap-intro .stay-hidden, body.impress-on-noisemap-outro #da-sense-image .stay-hidden, body.impress-on-noisemap-outro #da-sense-overview .stay-hidden {
     color: transparent;
     text-shadow: 0 0 8px #222;
-    opacity: 0.15; }
+    opacity: 0.18; }
 
 #noisemap-outro {
   height: 600px;
@@ -300,8 +302,10 @@ body.impress-on-movement-profile {
     -o-border-radius: 8px;
     border-radius: 8px; }
 
+body.impress-on-privacy-sony #movement-profile {
+  opacity: 0.15; }
 body.impress-on-privacy-sony img {
-  -webkit-filter: blur(8px); }
+  -webkit-filter: blur(10px); }
 
 #privacy-sony blockquote {
   background: rgba(255, 255, 255, 0.25); }

@@ -99,10 +99,11 @@ ul {
   padding-left: 100px;
 
   .privacy {
-    font-family: "PT Sans";
+    font-family: "Open Sans";
     font-size: 84px;
     position: absolute;
-    left: 192px;
+    font-weight: 600;
+    left: 195px;
     top: -14px;
     @include translate-z(20px);
   }
@@ -120,7 +121,7 @@ ul {
 
   h2 {
     margin: 0;
-    font-family: "PT Sans";
+    font-family: "Open Sans";
     font-weight: bold;
     position: absolute;
     font-size: 78px;
@@ -132,11 +133,12 @@ ul {
   }
 
   .noisemap {
-    font-family: "PT Serif";
+    font-family: "Open Sans";
     font-size: 62px;
     position: relative;
     top: -1.3em;
-    left: 92px;
+    left: 90px;
+    font-weight: 600;
     @include translate-z(20px);
   }
 
@@ -204,7 +206,7 @@ body.impress-on-noisemap-outro {
     .stay-hidden {
       color: transparent;
       text-shadow: 0 0 8px #222;
-      opacity: 0.15;
+      opacity: 0.18;
     }
   }
 }
@@ -302,8 +304,13 @@ body.impress-on-movement-profile {
   }
 }
 
-body.impress-on-privacy-sony img {
-  -webkit-filter: blur(8px);
+body.impress-on-privacy-sony {
+  #movement-profile {
+    opacity: 0.15;
+  }
+  img {
+    -webkit-filter: blur(10px);
+  }
 }
 
 #privacy-sony {
