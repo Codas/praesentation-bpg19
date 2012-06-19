@@ -1,12 +1,59 @@
 @import "mixins";
 
 body {
-  font-family: '', 'PT Sans', sans-serif;
-  background-image: -webkit-radial-gradient(hsla(0, 0, 0, 0), hsla(90, 66%, 20%, 0.4)), url('../img/bg.png');
+  font-family: 'Open Sans', 'PT Sans', sans-serif;
+  background-image: -webkit-radial-gradient(hsla(90, 75%, 0, 0), hsla(90, 75%, 15%, 0.45)), url('../img/bg.png');
 }
 
+h1, h2, h3, h4, h5 {
+  text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.25em;
+  text-align:center;
+}
+
+h1 {
+  font-size: 1.85em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size: 1.55em;
+}
+
+
+
 .step {
-  font-family: 'Georgia', 'PT Serif', georgia, serif;
+  font-family: "Open Sans", "PT Sans";
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', 'PT Serif', georgia, serif;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.big {
+  font-size: 110%;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.stay-hidden {
+  @include transition(all 1s);
+}
+
+ul {
+  margin-left: 1.2em;
+  list-style: disc;
+  font-size: 80%;
 }
 
 #title {
@@ -14,6 +61,7 @@ body {
   padding-left: 100px;
 
   .privacy {
+    font-family: "PT Sans";
     font-size: 84px;
     position: absolute;
     left: 192px;
@@ -21,13 +69,19 @@ body {
     @include translate-z(20px);
   }
 
+  h1, h2 {
+    text-align: left;
+  }
+
   h1 {
+    margin: 0;
     font-size: 190px;
     @include translate-z(50px);
     text-shadow: 0 0 6px rgba(0,0,0,0.3);
   }
 
   h2 {
+    margin: 0;
     font-family: "PT Sans";
     font-weight: bold;
     position: absolute;
@@ -40,6 +94,7 @@ body {
   }
 
   .noisemap {
+    font-family: "PT Serif";
     font-size: 62px;
     position: relative;
     top: -1.3em;
@@ -56,12 +111,87 @@ body {
   }
 }
 
-#da-sense {
-  width: 1125px;
-  h2 {
-   font-size: 1.875em;
+#da-sense-image {
+  padding: 0;
+}
+
+body.impress-on-da-sense-overview {
+  #da-sense-image {
+    opacity: 1;
   }
+}
+
+#da-sense-overview {
+  width: 1100px;
+}
+
+#noisemap-intro {
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include transition(all 1.2s);
+    @include transition-delay(1s);
+  }
+  height: 650px;
   img {
-    @include translate-z(-20px);
+    @include translate-x(-100px);
+    position: absolute;
+    left: 0;
+    top: 0;
   }
+
+  h2 {
+    text-align: left;
+  }
+
+  div.content {
+    position: absolute;
+    top: -0.3em;
+    left: 380px;
+  }
+}
+
+#movement-profile {
+  padding: 0;
+}
+
+body.impress-on-noisemap-outro {
+  #noisemap-intro .container {
+    @include transform(rotateY(-90deg) translateX(350px) translateZ(100px));
+    @include transition(all 1s);
+    @include transition-delay(0.6s);
+  }
+  #noisemap-intro, #da-sense-image, #da-sense-overview {
+    opacity: 1;
+    .stay-hidden {
+      color: transparent;
+      text-shadow: 0 0 8px #222;
+      opacity: 0.1;
+    }
+  }
+}
+
+#noisemap-outro {
+  h2 {
+    margin-top: 4.5em;
+  }
+}
+
+// body.impress-on-movement-profile {
+//   background-image: -webkit-radial-gradient(hsla(0, 100%, 10%, 0.4), hsla(0, 95%, 20%, 0.8)), url('../img/bg-red.png');
+// }
+
+#movement-profile {
+  border: 2px solid #C00;
+  padding: 0;
+  width: 958px;
+  @include border-radius(10px);
+  @include box-shadow(0 0 20px hsla(0, 85%, 20%, 1));
+  img {
+    @include border-radius(8px);
+  }
+}
+
+#movement-profile.active {
 }

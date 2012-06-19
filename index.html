@@ -12,24 +12,61 @@
   </head>
   <div id="impress">
     <!--nur eine Beispiel Slide als Hilfestellung-->
-    <div class="step" data-x="0" data-y="0" id="title">
+    <div class="step" data-rotate="-17" data-x="0" data-y="0" id="title">
       <span class="privacy">privacy for</span>
       <h1>da-sense</h1>
-      <span class="noisemap">und Noisemap</span>
+      <span class="noisemap">and Noisemap</span>
       <h2>BP Gruppe 19</h2>
       <p class="footnote">Arne Link, Elham Afghanyar, Jerome Reinländer, Maurice Gregor, Stephan Spielmal</p>
     </div>
     <!--/ Beispielsslide-->
-    <div class="step" data-rotate="17" data-x="1500" data-y="350" id="da-sense">
-      <h2>Was ist da-sense?</h2>
-      <img src="img/da-sense.png" />
+    <div class="step" data-scale="1.7" data-x="2800" data-y="1000" id="da-sense-overview">
+      <h2>
+        <span class="stay-hidden">Was ist </span> da-sense<span class="stay-hidden">?</span>
+      </h2>
+      <ul class="stay-hidden">
+        <li>Sensornetzwerk</li>
+        <li>Verschiedene Messwerte<ul>
+            <li>Lautstärke</li>
+            <li>Temperatur</li>
+            <li>Weiteres in Planung</li>
+          </ul>
+        </li>
+        <li>Verschiedene Quellen<ul>
+            <li>Waspmotes</li>
+            <li>Smartphones</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <div class="step" data-rotate="17" data-x="1500" data-y="350" id="da-sense">
-      <h2>Was ist da-sense?</h2>
-      <img src="img/da-sense.png" />
+    <div class="step" data-x="3270" data-y="1100" id="da-sense-image">
+      <img height="650" src="img/da-sense.png" />
     </div>
-    <div class="step" data-x="1000" data-y="-1500" id="noisemap">
-      <p>Was ist Noisemap</p>
+    <div class="step" data-rotate-y="90" data-x="3810" data-y="1100" data-z="-550" id="noisemap-intro">
+      <div class="container">
+        <img height="650" src="img/noisemap.png" />
+        <div class="content">
+          <h2>Noisemap</h2>
+          <ul class="stay-hidden">
+            <li>Android App</li>
+            <li>Sendet Daten an da-sense<ul>
+                <li>Benutzerdaten</li>
+                <li>Lautstärke</li>
+                <li>GPS Koordinaten</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="step" data-scale="2" data-x="3800" data-y="1400" data-z="500" id="noisemap-outro">
+      <h2>Funktioniert bereits alles</h2>
+    </div>
+    <div class="step" data-scale="1.5" data-x="3800" data-y="2500" data-z="300" id="privacy-intro">
+      <p class="big center semibold">Aber <span class="red">nicht ganz so</span>, wie es sollte</p>
+    </div>
+    <div class="step" data-scale="1.5" data-x="3800" data-y="3600" data-z="300" id="movement-profile">
+      <img height="650" src="img/why-privacy.png" />
     </div>
   </div>
   <script src="js/impress.js"></script>
