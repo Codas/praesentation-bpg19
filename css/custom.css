@@ -144,6 +144,7 @@ body.impress-on-da-sense-overview #da-sense-image {
   #noisemap-intro h2 {
     text-align: left; }
   #noisemap-intro div.content {
+    width: 600px;
     position: absolute;
     top: -0.3em;
     left: 380px; }

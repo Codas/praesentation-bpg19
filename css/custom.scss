@@ -126,6 +126,8 @@ body.impress-on-da-sense-overview {
 }
 
 #noisemap-intro {
+  height: 650px;
+
   .container {
     position: absolute;
     top: 0;
@@ -133,7 +135,6 @@ body.impress-on-da-sense-overview {
     @include transition(all 1.2s);
     @include transition-delay(1s);
   }
-  height: 650px;
   img {
     @include translate-x(-100px);
     position: absolute;
@@ -146,6 +147,7 @@ body.impress-on-da-sense-overview {
   }
 
   div.content {
+    width: 600px;
     position: absolute;
     top: -0.3em;
     left: 380px;
