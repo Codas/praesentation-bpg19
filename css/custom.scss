@@ -24,9 +24,41 @@ h2 {
   font-size: 1.7em;
 }
 h3 {
-  font-size: 1.55em;
+  font-size: 1.5em;
 }
 
+blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  font-size: 60%;
+  text-align: justify;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  font-weight: 200;
+
+}
+blockquote:before, q:before {
+  content: '„';
+}
+blockquote:after, q:after {
+  content: '”';
+}
+.author {
+  display: block;
+  text-align: right;
+  padding: 25px;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0 auto;
+  width: 75%;
+}
 
 
 .step {
@@ -59,7 +91,7 @@ h3 {
 ul {
   margin-left: 1.2em;
   list-style: disc;
-  font-size: 80%;
+  font-size: 75%;
 }
 
 #title {
@@ -128,7 +160,8 @@ body.impress-on-da-sense-overview {
 }
 
 #da-sense-overview {
-  width: 1100px;
+  width: 1000px;
+  height: 640px;
 }
 
 #noisemap-intro {
@@ -137,12 +170,12 @@ body.impress-on-da-sense-overview {
   .container {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50px;
     @include transition(all 1.2s);
     @include transition-delay(1s);
   }
   img {
-    @include translate-x(-100px);
+    @include translate-x(-50px);
     position: absolute;
     left: 0;
     top: 0;
@@ -160,10 +193,6 @@ body.impress-on-da-sense-overview {
   }
 }
 
-#movement-profile {
-  padding: 0;
-}
-
 body.impress-on-noisemap-outro {
   #noisemap-intro .container {
     @include transform(rotateY(-90deg) translateX(350px) translateZ(100px));
@@ -175,19 +204,32 @@ body.impress-on-noisemap-outro {
     .stay-hidden {
       color: transparent;
       text-shadow: 0 0 8px #222;
-      opacity: 0.12;
+      opacity: 0.15;
     }
   }
 }
 
 #noisemap-outro {
-  h2 {
-    margin-top: 4.5em;
+  height: 600px;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: capitalize;
+  .content {
+    position: absolute;
+    left: 230px;
+    top: 300px;
+    padding-left: 50px;
+  }
+  .alle {
+    @include rotate(-90deg);
+    position: absolute;
+    left: -1.5em;
   }
 }
 
 body.impress-on-movement-profile {
-  background: hsla(0, 95%,  35%, 0.60);
+  // background-image: -webkit-radial-gradient(hsla(5, 90%, 35%, 0.8), hsla(0, 85%, 20%, 0.95)), url('../img/bg.png');
+  background: hsla(3, 80%, 33%, 0.95);
   // -webkit-animation: pulsate 2s ease-in-out;
   // -webkit-animation-iteration-count: infinite;
   // -webkit-animation-delay: 1s;
@@ -199,6 +241,7 @@ body.impress-on-movement-profile {
 }
 
 #movement-profile {
+  padding: 0;
   border: 2px solid #C00;
   padding: 0;
   width: 958px;
@@ -206,8 +249,17 @@ body.impress-on-movement-profile {
   @include box-shadow(0 0 20px hsla(0, 85%, 20%, 1));
   img {
     @include border-radius(8px);
+    // -webkit-transition: -webkit-filter 0.5s ease-in-out;
   }
 }
 
-#movement-profile.active {
+body.impress-on-privacy-sony img {
+  -webkit-filter: blur(8px);
 }
+
+#privacy-sony {
+  blockquote {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
