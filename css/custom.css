@@ -648,3 +648,11 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     font-size: 84px; }
   #probleme-konsequenzen .radikal {
     font-size: 58px; }
+  #probleme-konsequenzen ul {
+    font-size: 46px;
+    margin-top: 30px;
+    list-style: disc;
+    text-transform: none;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 160%; }
