@@ -279,7 +279,6 @@ body.impress-on-movement-profile {
     margin-top: -40px;
     font-size: 89px;
     margin-left: -3px;
-    margin-bottom: -10px;
   }
 }
 
@@ -363,5 +362,47 @@ body.impress-on-privacy-unsere-aufgaben {
   }
   pre {
     margin-top: 25px;
+  }
+}
+
+#privacy-unsere-wahl {
+  height: 560px;
+  font-size: 62px;
+  letter-spacing: -3px;
+
+  .big {
+    font-size: 115px;
+    margin-left: -4px;
+    margin-bottom: 55px;
+  }
+
+  .pets, .zeit {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 129px;
+    &.iconic {
+      font-size: 89px;
+      position: relative;
+      top: -0.21em;
+    }
+  }
+
+  .iconic.pets {
+    color: #0A0;
+  }
+
+  .iconic.zeit {
+    margin-left: 0.3em;
+    color: #A00;
+  }
+
+  .auswahl {
+    margin-top: 30px;
+    font-size: 97px;
+  }
+
+  .pet-auswahl {
+    margin-top: 10px;
+    font-size: 54px;
   }
 }
