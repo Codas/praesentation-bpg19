@@ -163,10 +163,10 @@ html
       .hr
       p.auswahl Kleine Auswahl
       .pet-auswahl
-        .tor-orbot
-          | Tor / Orbot
+        /* .tor-orbot*/
+        /*   | Tor / Orbot*/
         .middot &middot;
-        .datentrennung Datentrennung
+        /* .datentrennung Datentrennung*/
 
     #privacy-tor-orbot-intro.typo.step data-x="7300" data-y="327" data-rotate-z="-180"
       .pet-auswahl
@@ -178,16 +178,50 @@ html
           img.logo src="img/tor-logo.svg"
           img.network src="img/tor-network.jpg"
 
-    #privacy-tor-orbot-onion-image
-      img.logo src="img/tor-onion.svg"
+    #privacy-tor-orbot-onion.typo.step data-x="7300" data-y="-500" data-rotate-z="-180"
+      .big Onion Routing
+      .bigsub Das Zwiebelschalenmodell
+      .center
+        img src="img/tor-package.svg" height="550"
 
-    #privacy-tor-orbot-onion.typo.step data-x="7315" data-y="425" data-rotate-z="-230" data-scale="0.01"
+    #privacy-datentrennung-intro.typo.step data-x="6460" data-y="327" data-rotate-z="-180"
+      .pet-auswahl
+        .datentrennung
+          | Datentrennung
       .fadein
-        .big Onion Routing
-        .center
-          img src="img/tor-package.svg" height="600"
+        .benutzerdaten Benutzerdaten
+        .hr
+        .arrows-up
+          .iconic.arrow_up
+          .iconic.arrow_up
+          .iconic.arrow_up
+          .iconic.arrow_up
+        .arrows-down
+          .iconic.arrow_down
+          .iconic.arrow_down
+          .iconic.arrow_down
+          .iconic.arrow_down
+        .hr
+        .messdaten Messwerte
 
-    .step data-x="4000" data-y="3000" data-z="8000"
+    #privacy-datentrennung-schema.typo.step data-x="6460" data-y="-400" data-rotate-z="-180"
+      p Authentification
+      .center
+        img src="img/authorization.svg" height="520"
+
+    #probleme-implementierung.typo.step  data-x="5900" data-y="-1300" data-rotate-z="-270"
+      .probleme
+        span.red Probleme 
+        | bei der
+      p Implementierung
+    #probleme-codebase.typo.step  data-x="5800" data-y="-1630" data-rotate-z="-360" data-scale="0.3"
+      .legacy Sehr viel Code
+      .probleme Gibt viele Probleme
+      .hr
+      .doku Keine Dokumentation
+      .test Keine automatisierten Tests
+
+    .step data-x="4000" data-y="2400" data-z="10000"
 
 
     /* #noisemap.step data-x="1000" data-y="-1500"*/

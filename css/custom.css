@@ -204,6 +204,10 @@ ul {
 body.impress-on-da-sense-overview #da-sense-image {
   opacity: 1; }
 
+body.impress-on-noisemap-intro #privacy-unsere-wahl,
+body.impress-on-noisemap-outro #privacy-unsere-wahl {
+  opacity: 0; }
+
 #da-sense-overview {
   width: 1000px;
   height: 640px; }
@@ -490,7 +494,8 @@ body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-modular {
     top: 0;
     right: 13; }
 
-body.impress-on-privacy-unsere-wahl #privacy-tor-orbot-intro {
+body.impress-on-privacy-unsere-wahl #privacy-tor-orbot-intro,
+body.impress-on-privacy-unsere-wahl #privacy-datentrennung-intro {
   opacity: 1; }
 
 #privacy-tor-orbot-intro {
@@ -546,44 +551,93 @@ body.impress-on-privacy-tor-orbot-intro #privacy-tor-orbot-intro {
     -ms-transform: scale(0.4);
     -o-transform: scale(0.4);
     transform: scale(0.4);
-    -webkit-transition-delay: 2s;
-    -moz-transition-delay: 2s;
-    -ms-transition-delay: 2s;
-    -o-transition-delay: 2s;
-    transition-delay: 2s; }
+    -webkit-transition-delay: 4s;
+    -moz-transition-delay: 4s;
+    -ms-transition-delay: 4s;
+    -o-transition-delay: 4s;
+    transition-delay: 4s; }
   body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-intro .network,
   body.impress-on-privacy-tor-orbot-intro #privacy-tor-orbot-intro .network {
     opacity: 1;
-    -webkit-transition-delay: 3s;
-    -moz-transition-delay: 3s;
-    -ms-transition-delay: 3s;
-    -o-transition-delay: 3s;
-    transition-delay: 3s; }
-
-body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-onion-image {
-  opacity: 1; }
-
-#privacy-tor-orbot-onion-image {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  position: absolute;
-  top: 448px;
-  left: 7178px;
-  -webkit-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
-  -moz-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
-  -ms-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
-  -o-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
-  transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
-  -webkit-transform-style: preserve-3d; }
-  #privacy-tor-orbot-onion-image img.logo {
-    position: absolute;
-    width: 2000px;
-    left: 250px;
-    top: -830px; }
+    -webkit-transition-delay: 4.7s;
+    -moz-transition-delay: 4.7s;
+    -ms-transition-delay: 4.7s;
+    -o-transition-delay: 4.7s;
+    transition-delay: 4.7s; }
+body.impress-on-privacy-tor-orbot-onion #privacy-datentrennung-schema,
+body.impress-on-privacy-tor-orbot-intro #privacy-datentrennung-schema {
+  opacity: 0; }
 
 #privacy-tor-orbot-onion {
-  font-size: 86px; }
+  font-size: 90px;
+  height: 720px; }
+  #privacy-tor-orbot-onion .bigsub {
+    margin-top: -15px;
+    font-size: 56px; }
+
+#privacy-datentrennung-intro {
+  height: 700px;
+  padding-top: 0;
+  padding-left: 0;
+  width: 900px;
+  font-size: 55px; }
+  #privacy-datentrennung-intro .pet-auswahl {
+    letter-spacing: -6px;
+    font-size: 108px;
+    margin-bottom: 20px; }
+  #privacy-datentrennung-intro .hr {
+    height: 2px;
+    border: 0;
+    background-color: black;
+    margin: 10px auto;
+    width: 80%; }
+  #privacy-datentrennung-intro .fadein {
+    margin-top: 100px;
+    text-align: center; }
+  #privacy-datentrennung-intro .benutzerdaten {
+    font-size: 80px; }
+  #privacy-datentrennung-intro .messdaten {
+    font-size: 85px;
+    letter-spacing: 10px; }
+  #privacy-datentrennung-intro .arrows-up, #privacy-datentrennung-intro .arrows-down {
+    opacity: 0.7;
+    font-size: 40px; }
+    #privacy-datentrennung-intro .arrows-up .iconic, #privacy-datentrennung-intro .arrows-down .iconic {
+      margin: 0 75px; }
+  #privacy-datentrennung-intro .arrows-up {
+    margin-bottom: 35px; }
+
+body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
+  opacity: 0; }
+
+#privacy-datentrennung-schema {
+  height: 700px;
+  padding-top: 0;
+  padding-left: 0;
+  width: 900px;
+  font-size: 92px; }
+  #privacy-datentrennung-schema .center {
+    margin-top: 50px; }
+
+#probleme-implementierung {
+  font-size: 87px;
+  height: 600px; }
+  #probleme-implementierung .probleme {
+    font-size: 90px;
+    line-height: 90%; }
+
+#probleme-codebase {
+  height: 600px; }
+  #probleme-codebase .legacy {
+    font-size: 106px;
+    margin-top: 15px; }
+  #probleme-codebase .hr {
+    margin: 20px 0 6px 3px; }
+  #probleme-codebase .probleme {
+    font-size: 78px; }
+  #probleme-codebase .doku {
+    font-size: 70px; }
+  #probleme-codebase .test {
+    margin-top: -14px;
+    font-size: 55px;
+    word-spacing: 4px; }

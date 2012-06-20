@@ -74,6 +74,13 @@ body.impress-on-da-sense-overview {
   }
 }
 
+body.impress-on-noisemap-intro,
+body.impress-on-noisemap-outro {
+  #privacy-unsere-wahl {
+    opacity: 0;
+  }
+}
+
 #da-sense-overview {
   width: 1000px;
   height: 640px;
@@ -411,7 +418,8 @@ body.impress-on-privacy-unsere-aufgaben {
 }
 
 body.impress-on-privacy-unsere-wahl {
-  #privacy-tor-orbot-intro {
+  #privacy-tor-orbot-intro,
+  #privacy-datentrennung-intro {
     opacity: 1;
   }
 }
@@ -461,43 +469,125 @@ body.impress-on-privacy-tor-orbot-intro {
     .logo {
       top: -90px;
       @include scale(0.4);
-      @include transition-delay(2s);
+      @include transition-delay(4s);
     }
     .network {
       opacity: 1;
-      @include transition-delay(3s);
+      @include transition-delay(4.7s);
     }
+  }
+  #privacy-datentrennung-schema {
+    opacity: 0;
   }
 }
 
-body.impress-on-privacy-tor-orbot-onion {
-  #privacy-tor-orbot-intro {
-    .logo {
-      // opacity: 0;
-    }
-  }
-  #privacy-tor-orbot-onion-image {
-    opacity: 1;
-  }
-}
-
-#privacy-tor-orbot-onion-image {
-  opacity: 0;
-  @include transition(opacity 0.5s);
-  position: absolute;
-  top: 448px;
-  left: 7178px;
-  @include transform(translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1));
-  -webkit-transform-style: preserve-3d;
-  // opacity: 0.01;
-  img.logo {
-    position: absolute;
-    width: 2000px;
-    left: 250px;
-    top: -830px;
-    // @include scale(5);
-  }
-}
 #privacy-tor-orbot-onion {
-  font-size: 86px;
+  font-size: 90px;
+  height: 720px;
+  .bigsub {
+    margin-top: -15px;
+    font-size: 56px;
+  }
 }
+
+#privacy-datentrennung-intro {
+  height: 700px;
+  padding-top: 0;
+  padding-left: 0;
+  width: 900px;
+  font-size: 55px;
+
+  .pet-auswahl {
+    letter-spacing: -6px;
+    font-size: 108px;
+    margin-bottom: 20px;
+  }
+
+  .hr {
+    height: 2px;
+    border:0;
+    background-color: black;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .fadein {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .benutzerdaten {
+    font-size: 80px;
+  }
+
+  .messdaten {
+    font-size: 85px;
+    letter-spacing: 10px;
+  }
+  .arrows-up, .arrows-down {
+    opacity: 0.7;
+    font-size: 40px;
+    .iconic {
+      margin: 0 75px;
+    }
+  }
+  .arrows-up {
+    margin-bottom: 35px;
+  }
+}
+
+body.impress-on-privacy-datentrennung-schema {
+  #privacy-tor-orbot-onion {
+    opacity: 0;
+  }
+}
+
+#privacy-datentrennung-schema {
+  height: 700px;
+  padding-top: 0;
+  padding-left: 0;
+  width: 900px;
+  font-size: 92px;
+
+  .center {
+    margin-top: 50px;
+  }
+
+}
+
+
+#probleme-implementierung {
+  font-size: 87px;
+  height: 600px;
+  .probleme {
+    font-size: 90px;
+    line-height: 90%;
+  }
+
+}
+
+#probleme-codebase {
+  height: 600px;
+  .legacy {
+    font-size: 106px;
+    margin-top: 15px;
+  }
+
+  .hr {
+    margin: 20px 0 6px 3px;
+  }
+
+  .probleme {
+    font-size: 78px;
+  }
+
+  .doku {
+    font-size: 70px;
+  }
+  .test {
+    margin-top: -14px;
+    font-size: 55px;
+    word-spacing: 4px;
+  }
+}
+
+

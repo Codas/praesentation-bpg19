@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="700px" height="400px" viewBox="0 0 700 400" enable-background="new 0 0 700 400" xml:space="preserve">
+<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M198.857,117.429c0,6.627-5.373,12-12,12H51.571
+	c-6.627,0-12-5.373-12-12v-24c0-6.627,5.373-12,12-12h135.286c6.627,0,12,5.373,12,12V117.429z"/>
+<text transform="matrix(1 0 0 1 45.2178 111.4287)" font-family="'PTSans-Regular'" font-size="18">Trusted Third Party</text>
+<g>
+	<rect x="101.281" y="38.379" fill="none" width="13.5" height="36.866"/>
+	<polygon points="114.781,49.871 108.031,38.379 101.281,49.871 106.218,49.871 106.218,75.246 109.843,75.246 109.843,49.871 	"/>
+</g>
+<g>
+	<rect x="207.49" y="103.812" fill="none" width="278.866" height="13.5"/>
+	<polygon fill="#231F20" points="474.865,117.312 486.356,110.562 474.865,103.812 474.865,108.75 207.49,108.75 207.49,112.375 
+		474.865,112.375 	"/>
+</g>
+<g>
+	<rect x="128.281" y="38.379" fill="none" width="13.5" height="36.866"/>
+	<polygon fill="#231F20" points="128.281,63.754 135.031,75.246 141.781,63.754 136.843,63.754 136.843,38.379 133.218,38.379 
+		133.218,63.754 	"/>
+</g>
+<text transform="matrix(1 0 0 1 48.9053 30)" font-family="'OpenSans'" font-size="18">OAuth 2 Provider</text>
+<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M655.857,117.429c0,6.627-5.373,12-12,12H508.571
+	c-6.628,0-12-5.373-12-12v-24c0-6.627,5.372-12,12-12h135.286c6.627,0,12,5.373,12,12V117.429z"/>
+<text transform="matrix(1 0 0 1 551.834 111.4287)" font-family="'OpenSans'" font-size="18">Server</text>
+<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M429.643,365.43c0,6.627-5.373,12-12,12H282.356
+	c-6.628,0-12-5.373-12-12v-24c0-6.629,5.372-12,12-12h135.286c6.627,0,12,5.371,12,12L429.643,365.43L429.643,365.43z"/>
+<text transform="matrix(1 0 0 1 325.2749 359.4287)" font-family="'OpenSans'" font-size="18">Client</text>
+<g>
+	<rect x="207.49" y="92.429" fill="none" width="278.866" height="13.5"/>
+	<polygon fill="#231F20" points="218.981,92.429 207.49,99.179 218.981,105.929 218.981,100.991 486.356,100.991 486.356,97.366 
+		218.981,97.366 	"/>
+</g>
+<text transform="matrix(1 0 0 1 301.3545 89.4287)" font-family="'OpenSans'" font-size="15">4. Token O.K.?</text>
+<text transform="matrix(1 0 0 1 304.6245 129.4287)" font-family="'OpenSans'" font-size="15">5. Token O.K.</text>
+<g>
+	
+		<rect x="108.567" y="225.269" transform="matrix(0.7071 0.7071 -0.7071 0.7071 232.5578 -97.4048)" fill="none" width="250.58" height="13.499"/>
+	<polygon fill="#231F20" points="309.553,317.257 322.451,320.609 319.099,307.711 315.607,311.202 146.544,142.14 143.981,144.703 
+		313.044,313.766 	"/>
+</g>
+<g>
+	
+		<rect x="80.429" y="223.622" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 188.2849 538.7345)" fill="none" width="250.579" height="13.5"/>
+	<polygon fill="#231F20" points="130.022,145.134 117.124,141.781 120.476,154.68 123.968,151.188 293.03,320.25 295.593,317.688 
+		126.531,148.625 	"/>
+</g>
+<text transform="matrix(1 0 0 1 118.3154 239)" font-family="'OpenSans'" font-size="15">1. Anfrage</text>
+<text transform="matrix(1 0 0 1 211.4736 200)" font-family="'OpenSans'" font-size="15">2. Token</text>
+<g>
+	
+		<rect x="350.723" y="222.179" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -22.4566 403.6421)" fill="none" width="250.58" height="13.499"/>
+	<polygon fill="#231F20" points="561.249,153.234 564.604,140.336 551.704,143.688 555.194,147.181 386.134,316.243 
+		388.696,318.807 557.759,149.743 	"/>
+</g>
+<text transform="matrix(1 0 0 1 493.1426 233)" enable-background="new    "><tspan x="0" y="0" font-family="'OpenSans'" font-size="15">3. Messwert</tspan><tspan x="14.455" y="18" font-family="'OpenSans'" font-size="15">+ Token</tspan></text>
+</svg>
