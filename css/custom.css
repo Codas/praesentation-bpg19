@@ -177,10 +177,10 @@ ul {
     transform: rotate(-90deg); }
   #title .noisemap {
     font-family: "Open Sans";
-    font-size: 62px;
+    font-size: 65px;
     position: relative;
     top: -1.3em;
-    left: 90px;
+    left: 350px;
     font-weight: 600;
     -webkit-transform: translateZ(20px);
     -moz-transform: translateZ(20px);
@@ -189,8 +189,8 @@ ul {
     transform: translateZ(20px); }
   #title .footnote {
     font-family: "Open Sans";
-    font-size: 32px;
-    margin-top: -50px;
+    font-size: 33px;
+    margin-top: 8px;
     color: #444;
     -webkit-transform: translateZ(-20px);
     -moz-transform: translateZ(-20px);
