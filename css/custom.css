@@ -355,7 +355,7 @@ body.impress-on-movement-profile {
 
 #privacy-unsere-aufgaben {
   padding-top: 0;
-  height: 700px; }
+  height: 755px; }
   #privacy-unsere-aufgaben .content {
     position: relative;
     margin-left: 19px; }
@@ -374,12 +374,17 @@ body.impress-on-movement-profile {
     margin-top: 0px;
     width: 755px;
     margin-bottom: -15px; }
+  #privacy-unsere-aufgaben .sandbox {
+    margin-top: 10px;
+    font-size: 77px;
+    margin-bottom: -41px; }
   #privacy-unsere-aufgaben .pets {
     font-size: 38px; }
   #privacy-unsere-aufgaben .big {
     margin-top: -40px;
     font-size: 89px;
-    margin-left: -3px; }
+    margin-left: -3px;
+    margin-bottom: -10px; }
 
 body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-id,
 body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-ad-hoc,
