@@ -496,9 +496,94 @@ body.impress-on-privacy-unsere-wahl #privacy-tor-orbot-intro {
 #privacy-tor-orbot-intro {
   height: 700px;
   padding-top: 0;
-  padding-left: 150px;
+  padding-left: 79px;
+  width: 800px;
   font-size: 49px; }
   #privacy-tor-orbot-intro .pet-auswahl {
     letter-spacing: -6px;
     font-size: 108px;
     margin-bottom: 20px; }
+  #privacy-tor-orbot-intro .images {
+    position: relative; }
+  #privacy-tor-orbot-intro .logo, #privacy-tor-orbot-intro .network {
+    position: absolute; }
+  #privacy-tor-orbot-intro .logo {
+    width: 500px;
+    top: 0;
+    left: 60px;
+    -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -ms-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out; }
+  #privacy-tor-orbot-intro .network {
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    top: 220px;
+    left: 50px; }
+
+body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-intro,
+body.impress-on-privacy-tor-orbot-intro #privacy-tor-orbot-intro {
+  opacity: 1; }
+  body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-intro .fadein,
+  body.impress-on-privacy-tor-orbot-intro #privacy-tor-orbot-intro .fadein {
+    opacity: 1; }
+  body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-intro .logo,
+  body.impress-on-privacy-tor-orbot-intro #privacy-tor-orbot-intro .logo {
+    top: -90px;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s; }
+  body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-intro .network,
+  body.impress-on-privacy-tor-orbot-intro #privacy-tor-orbot-intro .network {
+    opacity: 1;
+    -webkit-transition-delay: 3s;
+    -moz-transition-delay: 3s;
+    -ms-transition-delay: 3s;
+    -o-transition-delay: 3s;
+    transition-delay: 3s; }
+
+body.impress-on-privacy-tor-orbot-onion #privacy-tor-orbot-onion-image {
+  opacity: 1; }
+
+#privacy-tor-orbot-onion-image {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 448px;
+  left: 7178px;
+  -webkit-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
+  -moz-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
+  -ms-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
+  -o-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
+  transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1);
+  -webkit-transform-style: preserve-3d; }
+  #privacy-tor-orbot-onion-image img.logo {
+    position: absolute;
+    width: 2000px;
+    left: 250px;
+    top: -830px; }
+
+#privacy-tor-orbot-onion {
+  font-size: 86px; }

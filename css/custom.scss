@@ -419,12 +419,85 @@ body.impress-on-privacy-unsere-wahl {
 #privacy-tor-orbot-intro {
   height: 700px;
   padding-top: 0;
-  padding-left: 150px;
+  padding-left: 79px;
+  width: 800px;
   font-size: 49px;
   .pet-auswahl {
     letter-spacing: -6px;
     font-size: 108px;
     margin-bottom: 20px;
   }
+  .images {
+    position: relative;
+  }
+  .logo, .network {
+    position: absolute;
+  }
+  .logo {
+    width: 500px;
+    top: 0;
+    left: 60px;
+    @include transition(all 1.2s ease-in-out);
+  }
+  .network {
+    border-radius: 10px;
+    @include transition(all 1s);
+    @include box-shadow(0 0 10px hsla(0,0,0,0.4));
+    opacity: 0;
+    top: 220px;
+    left: 50px;
+  }
+  &.active {
+  }
 }
 
+body.impress-on-privacy-tor-orbot-onion,
+body.impress-on-privacy-tor-orbot-intro {
+  #privacy-tor-orbot-intro {
+    .fadein {
+      opacity: 1;
+    }
+    opacity: 1;
+    .logo {
+      top: -90px;
+      @include scale(0.4);
+      @include transition-delay(2s);
+    }
+    .network {
+      opacity: 1;
+      @include transition-delay(3s);
+    }
+  }
+}
+
+body.impress-on-privacy-tor-orbot-onion {
+  #privacy-tor-orbot-intro {
+    .logo {
+      // opacity: 0;
+    }
+  }
+  #privacy-tor-orbot-onion-image {
+    opacity: 1;
+  }
+}
+
+#privacy-tor-orbot-onion-image {
+  opacity: 0;
+  @include transition(opacity 0.5s);
+  position: absolute;
+  top: 448px;
+  left: 7178px;
+  @include transform(translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.1));
+  -webkit-transform-style: preserve-3d;
+  // opacity: 0.01;
+  img.logo {
+    position: absolute;
+    width: 2000px;
+    left: 250px;
+    top: -830px;
+    // @include scale(5);
+  }
+}
+#privacy-tor-orbot-onion {
+  font-size: 86px;
+}
