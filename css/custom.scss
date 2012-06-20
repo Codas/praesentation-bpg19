@@ -1,98 +1,11 @@
 @import "mixins";
+@import 'common';
 
-body {
-  font-family: 'Open Sans', 'PT Sans', sans-serif;
-  background: transparent;
-  background-image: transparent;
-  @include transition(background 1.5s);
-}
-
-html {
-  background-image: -webkit-radial-gradient(hsla(90, 75%, 0, 0), hsla(90, 75%, 15%, 0.45)), url('../img/bg.png');
-}
-
-h1, h2, h3, h4, h5 {
-  text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.5);
-  margin-bottom: 0.25em;
-  text-align:center;
-}
-
-h1 {
-  font-size: 1.85em;
-}
-h2 {
-  font-size: 1.7em;
-}
-h3 {
-  font-size: 1.5em;
-}
-
-blockquote {
-  display: block;
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-  font-size: 61%;
-  text-align: justify;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.5em;
-  font-weight: 200;
-
-}
-blockquote:before, q:before {
-  content: '„';
-}
-blockquote:after, q:after {
-  content: '”';
-}
-.author {
-  display: block;
-  text-align: right;
-  padding: 25px;
-  font-weight: 600;
-  font-size: 24px;
-  font-style: italic;
-  margin: 0 auto;
-  width: 75%;
-}
-
-
-.step {
-  font-family: "Open Sans", "PT Sans";
-  h1, h2, h3, h4 {
-    font-family: 'Georgia', 'PT Serif', georgia, serif;
-  }
-}
-
-.center {
-  text-align: center;
-}
-
-.red {
-  color: red;
-}
-
-.big {
-  font-size: 110%;
-}
-
-.semibold {
-  font-weight: 600;
-}
 
 .stay-hidden {
   @include transition(all 1s);
 }
 
-ul {
-  margin-left: 1.2em;
-  list-style: disc;
-  font-size: 75%;
-}
 
 #title {
   padding: 0;
@@ -213,15 +126,11 @@ body.impress-on-noisemap-outro {
 
 #noisemap-outro {
   height: 600px;
-  font-size: 80px;
-  font-weight: bold;
-  text-transform: uppercase;
   line-height: 100%;
-  letter-spacing: -2px;
 
   .content {
     position: absolute;
-    left: 100px;
+    left: 92px;
     top: 430px;
   }
 
@@ -250,30 +159,22 @@ body.impress-on-noisemap-outro {
 }
 
 #privacy-intro {
-  font-size: 80px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 130%;
-  letter-spacing: -2px;
   height: 350px;
 
   .content {
     position: absolute;
   }
-
   .intro {
     font-size: 55px;
   }
-
   .privacy {
     color: red;
     font-size: 205px;
     margin-left: -20px;
   }
-  
   .outro {
     margin-top: 30px;
-    font-size:  118px;
+    font-size:  117px;
     margin-left: -12px;
   }
 }
@@ -296,20 +197,20 @@ body.impress-on-movement-profile {
   border: 2px solid #C00;
   padding: 0;
   width: 958px;
+  opacity: 0.15;
   @include border-radius(10px);
   @include box-shadow(0 0 20px hsla(0, 85%, 20%, 1));
   img {
+    -webkit-filter: blur(10px);
     @include border-radius(8px);
     // -webkit-transition: -webkit-filter 0.5s ease-in-out;
   }
-}
 
-body.impress-on-privacy-sony {
-  #movement-profile {
-    opacity: 0.15;
-  }
-  img {
-    -webkit-filter: blur(10px);
+  &.active {
+    opacity: 1;
+    img {
+      -webkit-filter: none;
+    }
   }
 }
 
@@ -319,3 +220,142 @@ body.impress-on-privacy-sony {
   }
 }
 
+#privacy-intro-daubert {
+  height: 450px;
+  letter-spacing: -2px;
+
+  .content {
+    margin-left: 15px;
+  }
+  .deswegen {
+    font-size: 147px;
+    letter-spacing: -4px;
+    margin-bottom: 7px;
+  }
+  .privacy {
+    font-size: 69px;
+    margin-left: 5px;
+  }
+}
+
+#privacy-unsere-aufgaben {
+  padding-top: 0;
+  height: 700px;
+
+  .content {
+    position: relative;
+    margin-left: 19px;
+  }
+
+  .was {
+    margin-left: 6px;
+    font-size: 111px;
+  }
+
+  .aufgabe{
+    font-size: 65px;
+    margin-top: -10px;
+  }
+  .question {
+    font-size: 210px;
+    position: absolute;
+    left: 665px;
+    top: 35px;
+  }
+  .hr {
+    margin-top: 0px;
+    width: 755px;
+    margin-bottom: -15px;
+  }
+  .pets {
+    font-size: 38px;
+  }
+  .big {
+    margin-top: -40px;
+    font-size: 89px;
+    margin-left: -3px;
+  }
+}
+
+body.impress-on-privacy-unsere-aufgaben {
+  #privacy-pets-daubert-id,
+  #privacy-pets-daubert-ad-hoc,
+  #privacy-pets-daubert-anonymize,
+  #privacy-pets-daubert-modular {
+    opacity: 0.6;
+  }
+}
+
+#privacy-pets-daubert-id,
+#privacy-pets-daubert-ad-hoc,
+#privacy-pets-daubert-anonymize,
+#privacy-pets-daubert-modular {
+  width: 700px;
+  height: 700px;
+  .slided {
+    opacity: 0;
+    @include transition(opacity 2s);
+  }
+  &.active {
+    .slided {
+      opacity: 1;
+    }
+  }
+  ul {
+    margin-top: 30px;
+    list-style: disc;
+    text-transform: none;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 160%;
+    li {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+
+#privacy-pets-daubert-id {
+  p {
+    font-size: 34px;
+  }
+}
+
+#privacy-pets-daubert-ad-hoc {
+  p {
+    font-size: 38px;
+  }
+  img {
+    margin-top: 20px;
+  }
+}
+
+#privacy-pets-daubert-anonymize {
+  p {
+    font-size: 62;
+    letter-spacing: 1px;
+  }
+  img {
+    margin: 0 30px;
+    vertical-align: middle;
+  }
+  .center {
+    margin-top: 25px;
+    color: transparent;
+    background-color: rgba(70,40%,10%,0.75);
+    font-size: 180px;
+    text-shadow: 0 2px 2px hsla(0,0,100%,0.42);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+}
+
+#privacy-pets-daubert-modular {
+  p {
+    font-size: 39px;
+  }
+  pre {
+    margin-top: 25px;
+  }
+}

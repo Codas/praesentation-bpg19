@@ -8,7 +8,10 @@
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/highlight/vs.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
+    <script src="js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <div id="impress">
     <!--nur eine Beispiel Slide als Hilfestellung-->
@@ -59,7 +62,7 @@
         </div>
       </div>
     </div>
-    <div class="step" data-scale="3" data-x="3800" data-y="1450" id="noisemap-outro">
+    <div class="typo step" data-scale="3" data-x="3800" data-y="1450" id="noisemap-outro">
       <div class="content">
         <div class="alle">Alle</div>
         <div class="func">Funktionen</div>
@@ -67,7 +70,7 @@
         <div class="excl">!</div>
       </div>
     </div>
-    <div class="step" data-scale="3" data-x="3800" data-y="2760" id="privacy-intro">
+    <div class="typo step" data-scale="3" data-x="3800" data-y="2760" id="privacy-intro">
       <div class="content">
         <div class="intro">Vernachlässigt wird nur die</div>
         <div class="privacy">Privacy</div>
@@ -81,6 +84,63 @@
       <h3>Beispiel Sony 2011</h3>
       <blockquote>Adresse, Kreditkartennummer, Geburtstag, Passworte: Fast <span class="red">77 Millionen</span> Sony-Kunden bangen nach dem Angriff auf das Playstation-System um ihre persönlichen Daten [...] </blockquote><span class="author">- FAZ</span>
     </div>
+    <div class="typo step" data-rotate-z="-90" data-scale="2" data-x="5740" data-y="2600" id="privacy-intro-daubert">
+      <div class="content">
+        <div class="deswegen">deswegen</div>
+        <div class="privacy">privacy for da-sense</div>
+      </div>
+    </div>
+    <div class="typo step" data-rotate-z="-90" data-scale="2" data-x="6800" data-y="2600" id="privacy-unsere-aufgaben">
+      <div class="content">
+        <div class="was">was genau</div>
+        <div class="aufgabe">ist unsere Aufgabe</div>
+        <div class="question">?</div>
+        <div class="hr"></div>
+        <div class="pets">
+          <span class="green">P</span>rivacy <span class="green">E</span>nhancing <span class="green">T</span>echnologies (PETs) </div>
+        <div class="big">implementieren</div>
+        <div class="hr" style="margin-top: 15px;"></div>
+      </div>
+    </div>
+    <div class="typo smallfont step" data-rotate-z="-180" data-x="7200" data-y="3070" id="privacy-pets-daubert-ad-hoc">
+      <p>Ad-Hoc Information Exchange</p>
+      <div class="slided">
+        <ul>
+          <li>Verteilung der Messwerte über Ad-Hoc Netzwerk</li>
+          <li>Jedes Android Gerät potentiell Verteiler</li>
+        </ul>
+        <div class="center">
+          <img height="230" src="img/beamwifi.png" />
+        </div>
+      </div>
+    </div>
+    <div class="typo smallfont step" data-rotate-z="-180" data-x="7200" data-y="2537" id="privacy-pets-daubert-anonymize">
+      <p>Anonymisierung</p>
+      <div class="slided">
+        <ul>
+          <li>Datenserver erhält keine Nutzerinformationen</li>
+        </ul>
+        <div class="center">?<img height="240" src="img/anonym.png" />?</div>
+      </div>
+    </div>
+    <div class="typo smallfont step" data-rotate-z="-180" data-x="7200" data-y="2004" id="privacy-pets-daubert-modular">
+      <p>Forschung und Entwicklung</p>
+      <div class="slided">
+        <ul>
+          <li>Selbst nach Technologien suchen</li>
+          <li>Implementierbarkeit der Technologien erforschen</li>
+          <li>Eigene Ziele und Grenzen setzen</li>
+        </ul>
+        <div class="center">
+          <pre><code class="java">public class Research extends Knowledge {
+   public Research() {
+      this.knowledge = Internet.getAllInformation();
+   }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="step" data-x="4000" data-y="3000" data-z="8000"></div>
   </div>
   <script src="js/impress.js"></script>
   <script>impress().init();</script>

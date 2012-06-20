@@ -32,6 +32,10 @@ blockquote {
   margin: 0 auto;
   padding: 25px;
   background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   font-size: 61%;
   text-align: justify;
@@ -67,11 +71,50 @@ blockquote:after, q:after {
 .red {
   color: red; }
 
+.green {
+  color: #090; }
+
 .big {
   font-size: 110%; }
 
 .semibold {
   font-weight: 600; }
+
+pre {
+  text-align: left;
+  font-family: "DejaVu Sans Mono";
+  font-size: 22px;
+  line-height: 150%;
+  text-transform: none;
+  font-weight: normal; }
+  pre code {
+    background: rgba(224, 228, 205, 0.2);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25); }
+
+.step.typo {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 130%;
+  letter-spacing: -2px;
+  text-shadow: 0 2px 1px rgba(255, 255, 255, 0.3); }
+
+.hr {
+  height: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+ul {
+  margin-left: 1.2em;
+  list-style: disc;
+  font-size: 75%; }
+
+.step.smallfont {
+  font-size: 36px; }
 
 .stay-hidden {
   -webkit-transition: all 1s;
@@ -79,11 +122,6 @@ blockquote:after, q:after {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
-
-ul {
-  margin-left: 1.2em;
-  list-style: disc;
-  font-size: 75%; }
 
 #title {
   padding: 0;
@@ -217,14 +255,10 @@ body.impress-on-noisemap-outro #noisemap-intro, body.impress-on-noisemap-outro #
 
 #noisemap-outro {
   height: 600px;
-  font-size: 80px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 100%;
-  letter-spacing: -2px; }
+  line-height: 100%; }
   #noisemap-outro .content {
     position: absolute;
-    left: 100px;
+    left: 92px;
     top: 430px; }
   #noisemap-outro .alle {
     -webkit-transform: rotate(-90deg);
@@ -248,11 +282,6 @@ body.impress-on-noisemap-outro #noisemap-intro, body.impress-on-noisemap-outro #
     top: 28px; }
 
 #privacy-intro {
-  font-size: 80px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 130%;
-  letter-spacing: -2px;
   height: 350px; }
   #privacy-intro .content {
     position: absolute; }
@@ -264,7 +293,7 @@ body.impress-on-noisemap-outro #noisemap-intro, body.impress-on-noisemap-outro #
     margin-left: -20px; }
   #privacy-intro .outro {
     margin-top: 30px;
-    font-size: 118px;
+    font-size: 117px;
     margin-left: -12px; }
 
 body.impress-on-movement-profile {
@@ -285,6 +314,7 @@ body.impress-on-movement-profile {
   border: 2px solid #C00;
   padding: 0;
   width: 958px;
+  opacity: 0.15;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -296,16 +326,129 @@ body.impress-on-movement-profile {
   -o-box-shadow: 0 0 20px #5e0808;
   box-shadow: 0 0 20px #5e0808; }
   #movement-profile img {
+    -webkit-filter: blur(10px);
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border-radius: 8px; }
-
-body.impress-on-privacy-sony #movement-profile {
-  opacity: 0.15; }
-body.impress-on-privacy-sony img {
-  -webkit-filter: blur(10px); }
+  #movement-profile.active {
+    opacity: 1; }
+    #movement-profile.active img {
+      -webkit-filter: none; }
 
 #privacy-sony blockquote {
   background: rgba(255, 255, 255, 0.25); }
+
+#privacy-intro-daubert {
+  height: 450px;
+  letter-spacing: -2px; }
+  #privacy-intro-daubert .content {
+    margin-left: 15px; }
+  #privacy-intro-daubert .deswegen {
+    font-size: 147px;
+    letter-spacing: -4px;
+    margin-bottom: 7px; }
+  #privacy-intro-daubert .privacy {
+    font-size: 69px;
+    margin-left: 5px; }
+
+#privacy-unsere-aufgaben {
+  padding-top: 0;
+  height: 700px; }
+  #privacy-unsere-aufgaben .content {
+    position: relative;
+    margin-left: 19px; }
+  #privacy-unsere-aufgaben .was {
+    margin-left: 6px;
+    font-size: 111px; }
+  #privacy-unsere-aufgaben .aufgabe {
+    font-size: 65px;
+    margin-top: -10px; }
+  #privacy-unsere-aufgaben .question {
+    font-size: 210px;
+    position: absolute;
+    left: 665px;
+    top: 35px; }
+  #privacy-unsere-aufgaben .hr {
+    margin-top: 0px;
+    width: 755px;
+    margin-bottom: -15px; }
+  #privacy-unsere-aufgaben .pets {
+    font-size: 38px; }
+  #privacy-unsere-aufgaben .big {
+    margin-top: -40px;
+    font-size: 89px;
+    margin-left: -3px; }
+
+body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-id,
+body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-ad-hoc,
+body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-anonymize,
+body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-modular {
+  opacity: 0.6; }
+
+#privacy-pets-daubert-id,
+#privacy-pets-daubert-ad-hoc,
+#privacy-pets-daubert-anonymize,
+#privacy-pets-daubert-modular {
+  width: 700px;
+  height: 700px; }
+  #privacy-pets-daubert-id .slided,
+  #privacy-pets-daubert-ad-hoc .slided,
+  #privacy-pets-daubert-anonymize .slided,
+  #privacy-pets-daubert-modular .slided {
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s; }
+  #privacy-pets-daubert-id.active .slided,
+  #privacy-pets-daubert-ad-hoc.active .slided,
+  #privacy-pets-daubert-anonymize.active .slided,
+  #privacy-pets-daubert-modular.active .slided {
+    opacity: 1; }
+  #privacy-pets-daubert-id ul,
+  #privacy-pets-daubert-ad-hoc ul,
+  #privacy-pets-daubert-anonymize ul,
+  #privacy-pets-daubert-modular ul {
+    margin-top: 30px;
+    list-style: disc;
+    text-transform: none;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 160%; }
+    #privacy-pets-daubert-id ul li,
+    #privacy-pets-daubert-ad-hoc ul li,
+    #privacy-pets-daubert-anonymize ul li,
+    #privacy-pets-daubert-modular ul li {
+      margin-bottom: 12px; }
+
+#privacy-pets-daubert-id p {
+  font-size: 34px; }
+
+#privacy-pets-daubert-ad-hoc p {
+  font-size: 38px; }
+#privacy-pets-daubert-ad-hoc img {
+  margin-top: 20px; }
+
+#privacy-pets-daubert-anonymize p {
+  font-size: 62;
+  letter-spacing: 1px; }
+#privacy-pets-daubert-anonymize img {
+  margin: 0 30px;
+  vertical-align: middle; }
+#privacy-pets-daubert-anonymize .center {
+  margin-top: 25px;
+  color: transparent;
+  background-color: rgba(70, 102, 25, 0.75);
+  font-size: 180px;
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.42);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; }
+
+#privacy-pets-daubert-modular p {
+  font-size: 39px; }
+#privacy-pets-daubert-modular pre {
+  margin-top: 25px; }

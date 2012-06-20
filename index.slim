@@ -11,7 +11,13 @@ html
 
     link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet"
     link href="css/impress-demo.css" rel="stylesheet"
+
+    link rel="stylesheet" href="css/highlight/vs.css"
     link href="css/custom.css" rel="stylesheet"
+
+    script src="js/highlight.pack.js"
+    script
+      | hljs.initHighlightingOnLoad();
 
 
   #impress
@@ -62,14 +68,14 @@ html
                 li Lautstärke
                 li GPS Koordinaten
 
-    #noisemap-outro.step data-x="3800" data-y="1450" data-scale="3"
+    #noisemap-outro.typo.step data-x="3800" data-y="1450" data-scale="3"
       .content
         .alle Alle
         .func Funktionen
         .available bereits implementiert
         .excl !
 
-    #privacy-intro.step data-x="3800" data-y="2760" data-scale="3"
+    #privacy-intro.typo.step data-x="3800" data-y="2760" data-scale="3"
       .content
         .intro Vernachlässigt wird nur die
         .privacy Privacy
@@ -87,6 +93,65 @@ html
         ' [...]
       span.author
         |- FAZ
+
+    #privacy-intro-daubert.typo.step data-x="5740" data-y="2600" data-rotate-z="-90" data-scale="2"
+      .content
+        .deswegen deswegen
+        .privacy privacy for da-sense
+
+
+    #privacy-unsere-aufgaben.typo.step data-x="6800" data-y="2600" data-rotate-z="-90" data-scale="2"
+      .content
+        .was was genau
+        .aufgabe ist unsere Aufgabe
+        .question ?
+        .hr
+        .pets
+          span.green P
+          ' rivacy
+          span.green E
+          ' nhancing
+          span.green T
+          ' echnologies (PETs)
+        .big implementieren
+        .hr style="margin-top: 15px;"
+
+    #privacy-pets-daubert-ad-hoc.typo.smallfont.step data-x="7200" data-y="3070" data-rotate-z="-180"
+      p Ad-Hoc Information Exchange
+      .slided
+        ul
+          li Verteilung der Messwerte über Ad-Hoc Netzwerk
+          li Jedes Android Gerät potentiell Verteiler
+        .center
+          img src="img/beamwifi.png" height="230"
+    #privacy-pets-daubert-anonymize.typo.smallfont.step data-x="7200" data-y="2537" data-rotate-z="-180"
+      p Anonymisierung
+      .slided
+        ul
+          li Datenserver erhält keine Nutzerinformationen
+        .center
+          | ?
+          img src="img/anonym.png" height="240"
+          | ?
+    #privacy-pets-daubert-modular.typo.smallfont.step data-x="7200" data-y="2004" data-rotate-z="-180"
+      p Forschung und Entwicklung
+      .slided
+        ul
+          li Selbst nach Technologien suchen
+          li Implementierbarkeit der Technologien erforschen
+          li Eigene Ziele und Grenzen setzen
+        .center
+          pre
+            code.java
+              | public class Research extends Knowledge {
+                   public Research() {
+                      this.knowledge = Internet.getAllInformation();
+                   }
+                }
+
+
+    .step data-x="4000" data-y="3000" data-z="8000"
+
 
     /* #noisemap.step data-x="1000" data-y="-1500"*/
     /*   p Was ist Noisemap*/
