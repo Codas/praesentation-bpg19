@@ -125,3 +125,13 @@ ul {
 .step.smallfont {
   font-size: 36px;
 }
+
+.fadein {
+  opacity: 0;
+  @include transition(opacity 2s);
+}
+.step.active {
+  .fadein {
+    opacity: 1;
+  }
+}

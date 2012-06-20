@@ -297,15 +297,7 @@ body.impress-on-privacy-unsere-aufgaben {
 #privacy-pets-daubert-modular {
   width: 700px;
   height: 700px;
-  .slided {
-    opacity: 0;
-    @include transition(opacity 2s);
-  }
-  &.active {
-    .slided {
-      opacity: 1;
-    }
-  }
+
   ul {
     margin-top: 30px;
     list-style: disc;
@@ -404,5 +396,35 @@ body.impress-on-privacy-unsere-aufgaben {
   .pet-auswahl {
     margin-top: 10px;
     font-size: 54px;
+    position: relative;
+  }
+  .middot {
+    position: absolute;
+    top: 0;
+    left: 330px;
+  }
+  .datentrennung {
+    position: absolute;
+    top: 0;
+    right: 13;
   }
 }
+
+body.impress-on-privacy-unsere-wahl {
+  #privacy-tor-orbot-intro {
+    opacity: 1;
+  }
+}
+
+#privacy-tor-orbot-intro {
+  height: 700px;
+  padding-top: 0;
+  padding-left: 150px;
+  font-size: 49px;
+  .pet-auswahl {
+    letter-spacing: -6px;
+    font-size: 108px;
+    margin-bottom: 20px;
+  }
+}
+

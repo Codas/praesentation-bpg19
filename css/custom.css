@@ -116,6 +116,17 @@ ul {
 .step.smallfont {
   font-size: 36px; }
 
+.fadein {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s; }
+
+.step.active .fadein {
+  opacity: 1; }
+
 .stay-hidden {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -397,21 +408,6 @@ body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-modular {
 #privacy-pets-daubert-modular {
   width: 700px;
   height: 700px; }
-  #privacy-pets-daubert-id .slided,
-  #privacy-pets-daubert-ad-hoc .slided,
-  #privacy-pets-daubert-anonymize .slided,
-  #privacy-pets-daubert-modular .slided {
-    opacity: 0;
-    -webkit-transition: opacity 2s;
-    -moz-transition: opacity 2s;
-    -ms-transition: opacity 2s;
-    -o-transition: opacity 2s;
-    transition: opacity 2s; }
-  #privacy-pets-daubert-id.active .slided,
-  #privacy-pets-daubert-ad-hoc.active .slided,
-  #privacy-pets-daubert-anonymize.active .slided,
-  #privacy-pets-daubert-modular.active .slided {
-    opacity: 1; }
   #privacy-pets-daubert-id ul,
   #privacy-pets-daubert-ad-hoc ul,
   #privacy-pets-daubert-anonymize ul,
@@ -483,4 +479,26 @@ body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-modular {
     font-size: 97px; }
   #privacy-unsere-wahl .pet-auswahl {
     margin-top: 10px;
-    font-size: 54px; }
+    font-size: 54px;
+    position: relative; }
+  #privacy-unsere-wahl .middot {
+    position: absolute;
+    top: 0;
+    left: 330px; }
+  #privacy-unsere-wahl .datentrennung {
+    position: absolute;
+    top: 0;
+    right: 13; }
+
+body.impress-on-privacy-unsere-wahl #privacy-tor-orbot-intro {
+  opacity: 1; }
+
+#privacy-tor-orbot-intro {
+  height: 700px;
+  padding-top: 0;
+  padding-left: 150px;
+  font-size: 49px; }
+  #privacy-tor-orbot-intro .pet-auswahl {
+    letter-spacing: -6px;
+    font-size: 108px;
+    margin-bottom: 20px; }
