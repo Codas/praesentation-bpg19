@@ -108,8 +108,11 @@ ul {
   letter-spacing: -2px;
   text-shadow: 0 2px 1px rgba(255, 255, 255, 0.3); }
   .step.typo ul {
-    font-size: 46px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    font-size: 43px;
     margin-top: 30px;
+    margin-left: 0.9em;
     list-style: disc;
     text-transform: none;
     font-weight: 400;
@@ -375,7 +378,7 @@ body.impress-on-movement-profile {
   #movement-profile.active {
     opacity: 1; }
     #movement-profile.active img {
-      -webkit-filter: none; }
+      -webkit-filter: blur(0); }
 
 #privacy-sony blockquote {
   background: rgba(255, 255, 255, 0.25); }
@@ -700,7 +703,7 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
   margin-bottom: 20px; }
 
 #probleme-backend .meiste {
-  font-size: 97px; }
+  font-size: 90px; }
 #probleme-backend .lag {
   font-size: 125px; }
 #probleme-backend .backend {

@@ -217,7 +217,7 @@ body.impress-on-movement-profile {
   &.active {
     opacity: 1;
     img {
-      -webkit-filter: none;
+      -webkit-filter: blur(0);
     }
   }
 }
@@ -641,7 +641,7 @@ body.impress-on-privacy-datentrennung-schema {
 
 #probleme-backend {
   .meiste {
-    font-size: 97px;
+    font-size: 90px;
   }
   .lag {
     font-size: 125px;
