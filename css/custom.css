@@ -630,7 +630,6 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     line-height: 90%; }
 
 #probleme-codebase {
-  height: 600px;
   padding-top: 0; }
   #probleme-codebase .legacy {
     word-spacing: 6px;
@@ -654,7 +653,6 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     word-spacing: 7px; }
 
 #probleme-konsequenzen {
-  height: 620px;
   padding-top: 0; }
   #probleme-konsequenzen .konsequenzen {
     font-size: 92px; }
@@ -662,7 +660,6 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     font-size: 59px; }
 
 #probleme-erfolge {
-  height: 620px;
   padding-top: 0; }
   #probleme-erfolge .durchaus {
     font-size: 71px; }
