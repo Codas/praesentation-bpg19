@@ -747,6 +747,7 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
 #ausblick {
   padding: 0;
   height: 550px;
+  position: absolute;
   z-index: 1000; }
   #ausblick .ausblick {
     font-size: 186px;
