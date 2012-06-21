@@ -17,7 +17,11 @@ html
     link rel="stylesheet" href="css/highlight/vs.css"
     link href="css/custom.css" rel="stylesheet"
 
+    script src="js/jquery-1.7.2.js"
     script src="js/highlight.pack.js"
+    script src="js/highcharts.js"
+    script src="js/themes/impress-chart.js"
+    script src="js/iteration-chart.js"
     script
       | hljs.initHighlightingOnLoad();
 
@@ -27,7 +31,7 @@ html
       /! nur eine Beispiel Slide als Hilfestellung
       .step data-x="0" data-y="0" id="title" data-rotate="-17"
         span.privacy privacy for
-        h1 da-sense
+        h1 da_sense
         span.noisemap and Noisemap
         h2 BP Gruppe 19
         p.footnote
@@ -207,16 +211,17 @@ html
           .messdaten Messwerte
 
       #privacy-datentrennung-schema.typo.step data-x="6460" data-y="-400" data-rotate-z="-180"
-        p Authentification
+        p Authentication
         .center
           img src="img/authorization.svg" height="520"
 
-      #probleme-implementierung.typo.step  data-x="6100" data-y="-1500" data-rotate-z="-90"
+      #probleme-implementierung.typo.step data-x="6100" data-y="-1500" data-rotate-z="-90"
         .probleme
           span.red Probleme 
           | bei der
         p Implementierung
-      #probleme-codebase.typo.step  data-x="6250" data-y="-1240" data-rotate-z="-90" data-scale="0.35"
+
+      #probleme-codebase.typo.step data-x="6250" data-y="-1240" data-rotate-z="-90" data-scale="0.35"
         .legacy Sehr viel Code
         .probleme Gibt viele Probleme
         .hr
@@ -226,7 +231,7 @@ html
           li Keine automatisierten Tests
           li Sehr unübersichtliche Codebase
 
-      #probleme-konsequenzen.typo.step  data-x="6250" data-y="-1765" data-rotate-z="-90" data-scale="0.35"
+      #probleme-konsequenzen.typo.step data-x="6250" data-y="-1765" data-rotate-z="-90" data-scale="0.35"
         .konsequenzen Die maßnahmen
         .radikal
           ' waren teils etwas
@@ -238,7 +243,7 @@ html
           li Umfangreiche Testsuite erstellen
           li Ausführliche Dokumentation
 
-      #probleme-erfolge.typo.step  data-x="6700" data-y="-1765" data-rotate-z="-90" data-scale="0.35"
+      #probleme-erfolge.typo.step data-x="6700" data-y="-1765" data-rotate-z="-90" data-scale="0.35"
         .durchaus Allerdings auch sehr
         .erfolg erfolgreich
         .hr
@@ -249,44 +254,18 @@ html
           li 95% Test Coverage
           li 4900+ Worte Dokumentation
 
+      #iterationen-intro.typo.step data-x="6700" data-y="-1240" data-rotate-z="-90" data-scale="0.35"
+        .statistiken Statistiken zu
+        .detail den Iterationen
+        .oder oder
+        .wieso Wieso sind wir
+        .fertig noch nicht fertig
+        .question ?
+
+      #iterationen-overview.typo.step data-x="7200" data-y="-1500" data-rotate-z="-90"
+        #iteration-chart-container style="min-width: 400px; height: 550px;"
+
       .step data-x="4000" data-y="2100" data-z="11000"
-
-
-      /* #noisemap.step data-x="1000" data-y="-1500"*/
-      /*   p Was ist Noisemap*/
-
-      /* #problem.step data-x="2000" data-y="-1500"*/
-      /*   p Was ist das Problem*/
-
-      /* #why_privacy.step data-x="3000" data-y="-1500"*/
-      /*   p Warum ist Privacy wichtig*/
-
-      /* #task1.step data-x="4000" data-y="-1500"*/
-      /*   p Unsere Aufgabe: PETs, Sandbox*/
-
-      /* #task2.step data-x="5000" data-y="-1500"*/
-      /*   p Unsere Aufgabe: Modularität*/
-
-      /* #our_techs.step data-x="6000" data-y="-1500"*/
-      /*   p Titelfolie "Unsere Technologien"*/
-
-      /* #tor.step data-x="7000" data-y="-1500"*/
-      /*   p Tor/Orbot: kurz sinn erklären*/
-
-      /* #tor0.step data-x="7000" data-y="-4000"*/
-
-      /* #tor1.step data-scale="2" data-x="7000" data-y="-4000"*/
-
-      /* #tor2.step data-scale="3" data-x="7000" data-y="-4000"*/
-      /*   p packetbild*/
-
-      /* .step data-scale="2" data-x="7000" data-y="-4000" id="tor1.1"*/
-
-      /* .step data-scale="1" data-x="7000" data-y="-4000" id="tor0.1"*/
-
-      /* #oauth.step data-x="8000" data-y="-1500"*/
-      /*   p OAuth*/
-
 
 
 

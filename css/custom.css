@@ -135,6 +135,22 @@ ul {
 .step.active .fadein {
   opacity: 1; }
 
+.highcharts-container {
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px; }
+
 .stay-hidden {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -335,6 +351,7 @@ body.impress-on-movement-profile {
 #movement-profile {
   padding: 0;
   border: 2px solid #C00;
+  height: 654px;
   padding: 0;
   width: 958px;
   opacity: 0.15;
@@ -657,6 +674,8 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
   #probleme-konsequenzen .konsequenzen {
     font-size: 92px; }
   #probleme-konsequenzen .radikal {
+    margin-top: -10px;
+    margin-bottom: 15px;
     font-size: 59px; }
 
 #probleme-erfolge {
@@ -667,3 +686,31 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     font-size: 126px;
     margin: -5px 0 20px -9px;
     color: #090; }
+
+#iterationen-intro {
+  position: relative; }
+  #iterationen-intro .statistiken {
+    font-size: 108px;
+    margin-left: -2px; }
+  #iterationen-intro .detail {
+    font-size: 91px;
+    word-spacing: 2px;
+    letter-spacing: 0;
+    margin: -5px 0 20px -9px; }
+  #iterationen-intro .oder {
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.7);
+    border-left: none;
+    border-right: none; }
+  #iterationen-intro .wieso {
+    font-size: 90px; }
+  #iterationen-intro .fertig {
+    font-size: 74px; }
+  #iterationen-intro .question {
+    position: absolute;
+    right: 34px;
+    bottom: 98px;
+    font-size: 221px; }

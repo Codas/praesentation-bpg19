@@ -12,7 +12,11 @@
     <link href="icon/iconic_fill.css" rel="stylesheet" />
     <link href="css/highlight/vs.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.js"></script>
     <script src="js/highlight.pack.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/themes/impress-chart.js"></script>
+    <script src="js/iteration-chart.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
@@ -20,7 +24,7 @@
       <!--nur eine Beispiel Slide als Hilfestellung-->
       <div class="step" data-rotate="-17" data-x="0" data-y="0" id="title">
         <span class="privacy">privacy for</span>
-        <h1>da-sense</h1>
+        <h1>da_sense</h1>
         <span class="noisemap">and Noisemap</span>
         <h2>BP Gruppe 19</h2>
         <p class="footnote">Arne Link, Elham Afghanyar, Jerome Reinländer, Maurice Gregor, Stephan Spielmann</p>
@@ -198,7 +202,7 @@
         </div>
       </div>
       <div class="typo step" data-rotate-z="-180" data-x="6460" data-y="-400" id="privacy-datentrennung-schema">
-        <p>Authentification</p>
+        <p>Authentication</p>
         <div class="center">
           <img height="520" src="img/authorization.svg" />
         </div>
@@ -242,6 +246,17 @@
           <li>95% Test Coverage</li>
           <li>4900+ Worte Dokumentation</li>
         </ul>
+      </div>
+      <div class="typo step" data-rotate-z="-90" data-scale="0.35" data-x="6700" data-y="-1240" id="iterationen-intro">
+        <div class="statistiken">Statistiken zu</div>
+        <div class="detail">den Iterationen</div>
+        <div class="oder">oder</div>
+        <div class="wieso">Wieso sind wir</div>
+        <div class="fertig">noch nicht fertig</div>
+        <div class="question">?</div>
+      </div>
+      <div class="typo step" data-rotate-z="-90" data-x="7200" data-y="-1500" id="iterationen-overview">
+        <div id="iteration-chart-container" style="min-width: 400px; height: 550px;"></div>
       </div>
       <div class="step" data-x="4000" data-y="2100" data-z="11000"></div>
     </div>

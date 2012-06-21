@@ -145,3 +145,12 @@ ul {
     opacity: 1;
   }
 }
+
+.highcharts-container {
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  @include box-shadow(0 0 12px hsla(0, 0, 0, 0.3));
+  @include border-radius(12px);
+}
