@@ -746,10 +746,30 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     font-size: 221px; }
 
 #ausblick {
-  padding: 0;
-  height: 550px;
+  padding: 100px 60px;
+  height: 768px;
+  width: 1024px;
   position: absolute;
-  z-index: 1000; }
+  z-index: 500; }
+  #ausblick .background-hack {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-image: url("../img/blur-hack.jpg"); }
+  #ausblick.active .background-hack {
+    opacity: 1;
+    -webkit-transition: opacity 2s ease-in-out 0.5s;
+    -moz-transition: opacity 2s ease-in-out 0.5s;
+    -ms-transition: opacity 2s ease-in-out 0.5s;
+    -o-transition: opacity 2s ease-in-out 0.5s;
+    transition: opacity 2s ease-in-out 0.5s; }
+  #ausblick .content {
+    position: absolute;
+    z-index: 1001; }
   #ausblick .ausblick {
     font-size: 186px;
     -webkit-text-stroke: 1px #999;
@@ -770,19 +790,3 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     font-size: 50px;
     font-weight: 600;
     text-shadow: 1px 1px 1px #444444, 2px 2px 1px #444444, 3px 3px 1px #444444, 4px 4px 3px black; }
-
-#background-hack {
-  position: absolute;
-  z-index: 500;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-image: url("../img/blur-hack.jpg"); }
-
-body.impress-on-ausblick #background-hack {
-  opacity: 1;
-  -webkit-transition: opacity 2s ease-in-out 0.5s;
-  -moz-transition: opacity 2s ease-in-out 0.5s;
-  -ms-transition: opacity 2s ease-in-out 0.5s;
-  -o-transition: opacity 2s ease-in-out 0.5s;
-  transition: opacity 2s ease-in-out 0.5s; }

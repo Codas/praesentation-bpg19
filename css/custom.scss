@@ -702,10 +702,33 @@ body.impress-on-privacy-datentrennung-schema {
 }
 
 #ausblick {
-  padding: 0;
-  height: 550px;
+  padding: 100px 60px;
+  height: 768px;
+  width: 1024px;
   position: absolute;
-  z-index: 1000;
+  z-index: 500;
+
+  .background-hack {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-image: url('../img/blur-hack.jpg');
+  }
+  &.active {
+    .background-hack {
+      opacity: 1;
+      @include transition(opacity 2s ease-in-out 0.5s);
+    }
+  }
+  
+  .content {
+    position: absolute;
+    z-index: 1001;
+  }
 
   .ausblick {
     font-size: 186px;
@@ -745,18 +768,12 @@ body.impress-on-privacy-datentrennung-schema {
   }
 }
 
-#background-hack {
-    position: absolute;
-    z-index: 500;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background-image: url('../img/blur-hack.jpg');
-}
+// #background-hack {
+//     position: absolute;
+//     z-index: 500;
+//     height: 100%;
+//     width: 100%;
+//     opacity: 0;
+//     background-image: url('../img/blur-hack.jpg');
+// }
 
-body.impress-on-ausblick {
-  #background-hack {
-    opacity: 1;
-    @include transition(opacity 2s ease-in-out 0.5s);
-  }
-}
