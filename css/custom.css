@@ -688,7 +688,8 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     color: #070; }
 
 #probleme-aktuell .leider {
-  font-size: 72px;
+  font-size: 68px;
+  word-spacing: 4px;
   margin-bottom: -14px; }
 #probleme-aktuell .minimal {
   font-size: 76px;
