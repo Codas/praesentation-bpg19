@@ -779,8 +779,8 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
 
 body.impress-on-ausblick #background-hack {
   opacity: 1;
-  -webkit-transition: opacity 1.5s ease-in-out 0.5s;
-  -moz-transition: opacity 1.5s ease-in-out 0.5s;
-  -ms-transition: opacity 1.5s ease-in-out 0.5s;
-  -o-transition: opacity 1.5s ease-in-out 0.5s;
-  transition: opacity 1.5s ease-in-out 0.5s; }
+  -webkit-transition: opacity 2s ease-in-out 0.5s;
+  -moz-transition: opacity 2s ease-in-out 0.5s;
+  -ms-transition: opacity 2s ease-in-out 0.5s;
+  -o-transition: opacity 2s ease-in-out 0.5s;
+  transition: opacity 2s ease-in-out 0.5s; }

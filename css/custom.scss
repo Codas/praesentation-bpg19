@@ -755,6 +755,6 @@ body.impress-on-privacy-datentrennung-schema {
 body.impress-on-ausblick {
   #background-hack {
     opacity: 1;
-    @include transition(opacity 1.5s ease-in-out 0.5s);
+    @include transition(opacity 2s ease-in-out 0.5s);
   }
 }
