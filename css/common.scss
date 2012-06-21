@@ -5,6 +5,10 @@ body {
   background: transparent;
   background-image: transparent;
   @include transition(background 1.5s);
+
+  // .step {
+  //   -webkit-filter: blur(0);
+  // }
 }
 
 html {

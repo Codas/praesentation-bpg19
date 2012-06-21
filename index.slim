@@ -10,7 +10,7 @@ html
     link rel="shortcut icon" href="favicon.png"
     link rel="apple-touch-icon" href="apple-touch-icon.png"
 
-    link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet"
+    link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet"
     link href="css/impress-demo.css" rel="stylesheet"
     link href="icon/iconic_fill.css" rel="stylesheet"
 
@@ -27,6 +27,7 @@ html
 
 
   body
+    #background-hack
     #impress
       /! nur eine Beispiel Slide als Hilfestellung
       .step data-x="0" data-y="0" id="title" data-rotate="-17"
@@ -254,7 +255,22 @@ html
           li 95% Test Coverage
           li 4900+ Worte Dokumentation
 
-      #iterationen-intro.typo.step data-x="6700" data-y="-1240" data-rotate-z="-90" data-scale="0.35"
+      #probleme-aktuell.typo.step data-x="7100" data-y="-1765" data-rotate-z="-90" data-scale="0.35"
+        .leider Fontend leider noch
+        .minimal sehr minimalistisch
+        .hr
+        .img
+          img src="img/aktuell.png" width="810"
+
+      #probleme-backend.typo.step data-x="7400" data-y="-1765" data-scale="0.35"
+        .meiste Bisherige Fokus
+        .lag lag auf dem
+        .backend Backend
+        .hr
+        .frontend Arbeit am Frontend in
+        .folgenden folgenden Iterationen
+
+      #iterationen-intro.typo.step data-x="7400" data-y="-1450" data-scale="0.35"
         .statistiken Statistiken zu
         .detail den Iterationen
         .oder oder
@@ -262,11 +278,17 @@ html
         .fertig noch nicht fertig
         .question ?
 
-      #iterationen-overview.typo.step data-x="7200" data-y="-1500" data-rotate-z="-90"
+      #iterationen-overview.typo.step data-x="7880" data-y="-1600" data-rotate-z="-90"
         #iteration-chart-container style="min-width: 400px; height: 550px;"
 
-      .step data-x="4000" data-y="2100" data-z="11000"
 
+      #ausblick.typo.step data-x="4000" data-y="6000" data-z="8000" data-rotate-x="-25"
+        span.ausblick Ausblick
+        .hr
+        ul
+          li Verbesserung der GUI
+          li Administration der TTP
+          li Weitere PETs
 
 
 

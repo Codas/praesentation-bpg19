@@ -7,7 +7,7 @@
     <title>Bachelor Praktikum SoSe 2012 Gruppe 19</title>
     <link href="favicon.png" rel="shortcut icon" />
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="icon/iconic_fill.css" rel="stylesheet" />
     <link href="css/highlight/vs.css" rel="stylesheet" />
@@ -20,6 +20,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
+    <div id="background-hack"></div>
     <div id="impress">
       <!--nur eine Beispiel Slide als Hilfestellung-->
       <div class="step" data-rotate="-17" data-x="0" data-y="0" id="title">
@@ -247,7 +248,23 @@
           <li>4900+ Worte Dokumentation</li>
         </ul>
       </div>
-      <div class="typo step" data-rotate-z="-90" data-scale="0.35" data-x="6700" data-y="-1240" id="iterationen-intro">
+      <div class="typo step" data-rotate-z="-90" data-scale="0.35" data-x="7100" data-y="-1765" id="probleme-aktuell">
+        <div class="leider">Fontend leider noch</div>
+        <div class="minimal">sehr minimalistisch</div>
+        <div class="hr"></div>
+        <div class="img">
+          <img src="img/aktuell.png" width="810" />
+        </div>
+      </div>
+      <div class="typo step" data-scale="0.35" data-x="7400" data-y="-1765" id="probleme-backend">
+        <div class="meiste">Bisherige Fokus</div>
+        <div class="lag">lag auf dem</div>
+        <div class="backend">Backend</div>
+        <div class="hr"></div>
+        <div class="frontend">Arbeit am Frontend in</div>
+        <div class="folgenden">folgenden Iterationen</div>
+      </div>
+      <div class="typo step" data-scale="0.35" data-x="7400" data-y="-1450" id="iterationen-intro">
         <div class="statistiken">Statistiken zu</div>
         <div class="detail">den Iterationen</div>
         <div class="oder">oder</div>
@@ -255,10 +272,18 @@
         <div class="fertig">noch nicht fertig</div>
         <div class="question">?</div>
       </div>
-      <div class="typo step" data-rotate-z="-90" data-x="7200" data-y="-1500" id="iterationen-overview">
+      <div class="typo step" data-rotate-z="-90" data-x="7880" data-y="-1600" id="iterationen-overview">
         <div id="iteration-chart-container" style="min-width: 400px; height: 550px;"></div>
       </div>
-      <div class="step" data-x="4000" data-y="2100" data-z="11000"></div>
+      <div class="typo step" data-rotate-x="-25" data-x="4000" data-y="6000" data-z="8000" id="ausblick">
+        <span class="ausblick">Ausblick</span>
+        <div class="hr"></div>
+        <ul>
+          <li>Verbesserung der GUI</li>
+          <li>Administration der TTP</li>
+          <li>Weitere PETs</li>
+        </ul>
+      </div>
     </div>
     <script src="js/impress.js"></script>
     <script>impress().init();</script>

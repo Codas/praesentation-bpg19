@@ -494,7 +494,7 @@ body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-modular {
       position: relative;
       top: -0.21em; }
   #privacy-unsere-wahl .iconic.pets {
-    color: #0A0; }
+    color: #080; }
   #privacy-unsere-wahl .iconic.zeit {
     margin-left: 0.3em;
     color: #A00; }
@@ -685,7 +685,36 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
   #probleme-erfolge .erfolg {
     font-size: 126px;
     margin: -5px 0 20px -9px;
-    color: #090; }
+    color: #070; }
+
+#probleme-aktuell .leider {
+  font-size: 72px;
+  margin-bottom: -14px; }
+#probleme-aktuell .minimal {
+  font-size: 76px;
+  word-spacing: 5px; }
+#probleme-aktuell .hr {
+  width: 99%;
+  margin-bottom: 20px; }
+
+#probleme-backend .meiste {
+  font-size: 97px; }
+#probleme-backend .lag {
+  font-size: 125px; }
+#probleme-backend .backend {
+  font-size: 176px;
+  margin-left: -4px;
+  margin-bottom: 40px;
+  padding: 30px 0;
+  color: #070; }
+#probleme-backend .frontend {
+  font-size: 67px;
+  letter-spacing: -1px;
+  padding-top: 10px;
+  margin-bottom: -30px; }
+#probleme-backend .folgenden {
+  font-size: 65px;
+  word-spacing: 8px; }
 
 #iterationen-intro {
   position: relative; }
@@ -714,3 +743,44 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     right: 34px;
     bottom: 98px;
     font-size: 221px; }
+
+#ausblick {
+  padding: 0;
+  height: 550px;
+  z-index: 1000; }
+  #ausblick .ausblick {
+    font-size: 186px;
+    -webkit-text-stroke: 1px #999;
+    text-shadow: 1px 1px 1px #222222, 2px 2px 1px #222222, 3px 3px 1px #222222, 4px 4px 1px #222222, 5px 5px 1px #222222, 6px 6px 8px black; }
+  #ausblick .hr {
+    height: 3px;
+    border: none;
+    background: #AAA;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 1px #333333, 2px 2px 1px #333333, 3px 3px 1px #333333, 4px 4px 1px #333333, 5px 5px 1px #333333, 6px 6px 6px black; }
+  #ausblick ul {
+    margin-top: 70px;
+    letter-spacing: 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #444444, 2px 2px 1px #444444, 3px 3px 1px #444444, 4px 4px 3px black; }
+
+#background-hack {
+  position: absolute;
+  z-index: 500;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-image: url("../img/blur-hack.jpg"); }
+
+body.impress-on-ausblick #background-hack {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s ease-in-out 0.5s;
+  -moz-transition: opacity 1.5s ease-in-out 0.5s;
+  -ms-transition: opacity 1.5s ease-in-out 0.5s;
+  -o-transition: opacity 1.5s ease-in-out 0.5s;
+  transition: opacity 1.5s ease-in-out 0.5s; }

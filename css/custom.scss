@@ -383,7 +383,7 @@ body.impress-on-privacy-unsere-aufgaben {
   }
 
   .iconic.pets {
-    color: #0A0;
+    color: #080;
   }
 
   .iconic.zeit {
@@ -616,7 +616,51 @@ body.impress-on-privacy-datentrennung-schema {
   .erfolg {
     font-size: 126px;
     margin: -5px 0 20px -9px;
-    color: #090;
+    color: #070;
+  }
+}
+
+#probleme-aktuell {
+
+  .leider {
+    font-size: 72px;
+    margin-bottom: -14px;
+  }
+  .minimal {
+    font-size: 76px;
+    word-spacing: 5px;
+  }
+  
+  .hr {
+    width: 99%;
+    margin-bottom: 20px;
+  }
+}
+
+#probleme-backend {
+  .meiste {
+    font-size: 97px;
+  }
+  .lag {
+    font-size: 125px;
+  }
+  .backend {
+    font-size: 176px;
+    margin-left: -4px;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    color: #070;
+  }
+
+  .frontend {
+    font-size: 67px;
+    letter-spacing: -1px;
+    padding-top: 10px;
+    margin-bottom: -30px;
+  }
+  .folgenden {
+    font-size: 65px;
+    word-spacing: 8px;
   }
 }
 
@@ -653,5 +697,64 @@ body.impress-on-privacy-datentrennung-schema {
     right: 34px;
     bottom: 98px;
     font-size: 221px;
+  }
+}
+
+#ausblick {
+  padding: 0;
+  height: 550px;
+  z-index: 1000;
+
+  .ausblick {
+    font-size: 186px;
+    -webkit-text-stroke: 1px #999;
+    text-shadow:
+        1px 1px 1px #222,
+        2px 2px 1px #222,
+        3px 3px 1px #222,
+        4px 4px 1px #222,
+        5px 5px 1px #222,
+        6px 6px 8px #000;
+  }
+  .hr {
+    height: 3px;
+    border: none;
+    background: #AAA;
+    @include border-radius(3px);
+    -webkit-box-shadow:
+        1px 1px 1px #333,
+        2px 2px 1px #333,
+        3px 3px 1px #333,
+        4px 4px 1px #333,
+        5px 5px 1px #333,
+        6px 6px 6px #000;
+  }
+
+  ul {
+    margin-top: 70px;
+    letter-spacing: 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow:
+        1px 1px 1px #444,
+        2px 2px 1px #444,
+        3px 3px 1px #444,
+        4px 4px 3px #000;
+  }
+}
+
+#background-hack {
+    position: absolute;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-image: url('../img/blur-hack.jpg');
+}
+
+body.impress-on-ausblick {
+  #background-hack {
+    opacity: 1;
+    @include transition(opacity 1.5s ease-in-out 0.5s);
   }
 }
