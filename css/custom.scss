@@ -306,12 +306,7 @@ body.impress-on-privacy-unsere-aufgaben {
   height: 700px;
 
   ul {
-    margin-top: 30px;
-    list-style: disc;
-    text-transform: none;
-    font-weight: 400;
-    text-shadow: none;
-    line-height: 160%;
+    font-size: 28px;
     li {
       margin-bottom: 12px;
     }
@@ -567,7 +562,9 @@ body.impress-on-privacy-datentrennung-schema {
 
 #probleme-codebase {
   height: 600px;
+  padding-top: 0;
   .legacy {
+    word-spacing: 6px;
     font-size: 106px;
     margin-top: 15px;
   }
@@ -578,6 +575,7 @@ body.impress-on-privacy-datentrennung-schema {
 
   .probleme {
     font-size: 78px;
+    word-spacing: 4px;
   }
 
   .doku {
@@ -588,24 +586,37 @@ body.impress-on-privacy-datentrennung-schema {
     font-size: 55px;
     word-spacing: 4px;
   }
+  .codebase {
+    font-size: 46px;
+    margin-top: -28px;
+    letter-spacing: -1px;
+    word-spacing: 7px;
+  }
 }
 
 
 #probleme-konsequenzen {
-  height: 600px;
+  height: 620px;
+  padding-top: 0;
   .konsequenzen {
-    font-size: 84px;
+    font-size: 92px;
   }
   .radikal {
     font-size: 59px;
   }
-  ul {
-    font-size: 46px;
-    margin-top: 30px;
-    list-style: disc;
-    text-transform: none;
-    font-weight: 400;
-    text-shadow: none;
-    line-height: 160%;
+}
+
+
+#probleme-erfolge {
+  height: 620px;
+  padding-top: 0;
+  .durchaus {
+    font-size: 71px;
+  }
+  .erfolg {
+    font-size: 126px;
+    margin: -5px 0 20px -9px;
+    color: #090;
   }
 }
+

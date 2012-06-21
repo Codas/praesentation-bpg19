@@ -101,6 +101,12 @@ pre {
   }
 }
 
+ul {
+  margin-left: 1.2em;
+  list-style: disc;
+  font-size: 75%;
+}
+
 .step.typo {
   font-size: 80px;
   font-weight: bold;
@@ -108,18 +114,22 @@ pre {
   line-height: 130%;
   letter-spacing: -2px;
   text-shadow: 0 2px 1px hsla(0, 0, 100%, 0.3);
+
+  ul {
+    font-size: 46px;
+    margin-top: 30px;
+    list-style: disc;
+    text-transform: none;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 160%;
+  }
 }
 
 .hr {
   height: 0px;
   border-top: 1px solid black;
   border-bottom: 1px solid hsla(0, 0, 100%, 0.3);
-}
-
-ul {
-  margin-left: 1.2em;
-  list-style: disc;
-  font-size: 75%;
 }
 
 .step.smallfont {

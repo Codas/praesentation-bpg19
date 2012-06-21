@@ -1,3 +1,4 @@
+doctype 5
 html
   head
     meta charset="utf-8"
@@ -21,255 +22,270 @@ html
       | hljs.initHighlightingOnLoad();
 
 
-  #impress
-    /! nur eine Beispiel Slide als Hilfestellung
-    .step data-x="0" data-y="0" id="title" data-rotate="-17"
-      span.privacy privacy for
-      h1 da_sense
-      span.noisemap and Noisemap
-      h2 BP Gruppe 19
-      p.footnote
-        | Arne Link, Elham Afghanyar, Jerome Reinländer, Maurice Gregor, Stephan Spielmann
-    /! / Beispielsslide
+  body
+    #impress
+      /! nur eine Beispiel Slide als Hilfestellung
+      .step data-x="0" data-y="0" id="title" data-rotate="-17"
+        span.privacy privacy for
+        h1 da-sense
+        span.noisemap and Noisemap
+        h2 BP Gruppe 19
+        p.footnote
+          | Arne Link, Elham Afghanyar, Jerome Reinländer, Maurice Gregor, Stephan Spielmann
+      /! / Beispielsslide
 
 
-    #da-sense-overview.step data-x="2800" data-y="1000" data-scale="2.1"
-      h2
-        span.stay-hidden Was ist 
-        |  da_sense
-        span.stay-hidden ?
-      ul.stay-hidden
-        li Sensornetzwerk
-        li
-          | Verschiedene Messwerte
+      #da-sense-overview.step data-x="2800" data-y="1000" data-scale="2.1"
+        h2
+          span.stay-hidden Was ist 
+          |  da_sense
+          span.stay-hidden ?
+        ul.stay-hidden
+          li Sensornetzwerk
+          li
+            | Verschiedene Messwerte
+            ul
+              li Lautstärke
+              li Temperatur
+              li Weiteres in Planung
+          li
+            | Verschiedene Quellen
+            ul
+              li Waspmotes
+              li Smartphones
+
+      #da-sense-image.step data-x="3346" data-y="1100"
+        img src="img/da-sense.png" height="600"
+
+      #noisemap-intro.step data-x="3810" data-y="1125" data-z="-450" data-rotate-y="90"
+        .container
+          img src="img/noisemap.png" height="600"
+          div.content
+            h2 Noisemap
+            ul.stay-hidden
+              li Android App
+              li
+                | Sendet Daten an da_sense
+                ul
+                  li Benutzerdaten
+                  li Lautstärke
+                  li GPS Koordinaten
+
+      #noisemap-outro.typo.step data-x="3800" data-y="1450" data-scale="3"
+        .content
+          .alle Alle
+          .func Funktionen
+          .available bereits implementiert
+          .excl !
+
+      #privacy-intro.typo.step data-x="3800" data-y="2760" data-scale="3"
+        .content
+          .intro Vernachlässigt wird nur die
+          .privacy Privacy
+          .outro Der benutzer
+
+      #movement-profile.step data-x="3800" data-y="4800"
+        img src="img/why-privacy.png" height="650"
+
+      #privacy-sony.step data-x="3800" data-y="5100" data-z="1800"
+        h3 Beispiel Sony 2011
+        blockquote
+          ' Adresse, Kreditkartennummer, Geburtstag, Passworte:
+          ' Fast <span class="red">77 Millionen</span> Sony-Kunden bangen nach dem Angriff
+          ' auf das Playstation-System um ihre persönlichen Daten
+          ' [...]
+        span.author
+          |- FAZ
+
+      #privacy-intro-daubert.typo.step data-x="5740" data-y="2600" data-rotate-z="-90" data-scale="2"
+        .content
+          .deswegen deswegen
+          .privacy privacy for da_sense
+
+
+      #privacy-unsere-aufgaben.typo.step data-x="6900" data-y="2600" data-rotate-z="-90" data-scale="2"
+        .content
+          .was was genau
+          .aufgabe ist unsere Aufgabe
+          .question ?
+          .hr
+          .sandbox
+            | Eine Sandbox fuer
+          .pets
+            span.green P
+            ' rivacy
+            span.green E
+            ' nhancing
+            span.green T
+            ' echnologies (PETs)
+          .big implementieren
+          .hr style="margin-top: 14px;"
+
+      #privacy-pets-daubert-ad-hoc.typo.smallfont.step data-x="7350" data-y="3070" data-rotate-z="-180"
+        p Ad-Hoc Information Exchange
+        .fadein
           ul
-            li Lautstärke
-            li Temperatur
-            li Weiteres in Planung
-        li
-          | Verschiedene Quellen
+            li Verteilung der Messwerte über Ad-Hoc Netzwerk
+            li Jedes Android Gerät potentiell Verteiler
+          .center
+            img src="img/beamwifi.png" height="230"
+      #privacy-pets-daubert-anonymize.typo.smallfont.step data-x="7350" data-y="2537" data-rotate-z="-180"
+        p Anonymisierung
+        .fadein
           ul
-            li Waspmotes
-            li Smartphones
+            li Datenserver erhält keine Nutzerinformationen
+            li Nutzerdaten werden anonymisiert
+            li Zero Knowledge Proof
+          .center
+            | ?
+            img src="img/anonym.png" height="240"
+            | ?
+      #privacy-pets-daubert-modular.typo.smallfont.step data-x="7350" data-y="2004" data-rotate-z="-180"
+        p Forschung und Entwicklung
+        .fadein
+          ul
+            li Selbst nach Technologien suchen
+            li Implementierbarkeit der Technologien erforschen
+            li Eigene Ziele und Grenzen setzen
+          .center
+            pre
+              code.java
+                | public class Research extends Knowledge {
+                     public Research() {
+                        this.knowledge = Internet.getAllInformation();
+                     }
+                  }
 
-    #da-sense-image.step data-x="3346" data-y="1100"
-      img src="img/da-sense.png" height="600"
-
-    #noisemap-intro.step data-x="3810" data-y="1125" data-z="-450" data-rotate-y="90"
-      .container
-        img src="img/noisemap.png" height="600"
-        div.content
-          h2 Noisemap
-          ul.stay-hidden
-            li Android App
-            li
-              | Sendet Daten an da_sense
-              ul
-                li Benutzerdaten
-                li Lautstärke
-                li GPS Koordinaten
-
-    #noisemap-outro.typo.step data-x="3800" data-y="1450" data-scale="3"
-      .content
-        .alle Alle
-        .func Funktionen
-        .available bereits implementiert
-        .excl !
-
-    #privacy-intro.typo.step data-x="3800" data-y="2760" data-scale="3"
-      .content
-        .intro Vernachlässigt wird nur die
-        .privacy Privacy
-        .outro Der benutzer
-
-    #movement-profile.step data-x="3800" data-y="4800"
-      img src="img/why-privacy.png" height="650"
-
-    #privacy-sony.step data-x="3800" data-y="5100" data-z="1800"
-      h3 Beispiel Sony 2011
-      blockquote
-        ' Adresse, Kreditkartennummer, Geburtstag, Passworte:
-        ' Fast <span class="red">77 Millionen</span> Sony-Kunden bangen nach dem Angriff
-        ' auf das Playstation-System um ihre persönlichen Daten
-        ' [...]
-      span.author
-        |- FAZ
-
-    #privacy-intro-daubert.typo.step data-x="5740" data-y="2600" data-rotate-z="-90" data-scale="2"
-      .content
-        .deswegen deswegen
-        .privacy privacy for da_sense
-
-
-    #privacy-unsere-aufgaben.typo.step data-x="6900" data-y="2600" data-rotate-z="-90" data-scale="2"
-      .content
-        .was was genau
-        .aufgabe ist unsere Aufgabe
-        .question ?
+      #privacy-unsere-wahl.typo.step data-x="6800" data-y="950" data-rotate-z="-180" data-scale="2"
+        p Unser groeßtes Problem
+        .iconic.arrow_up.pets
+        span.pets  PETs 
+        .iconic.arrow_down.zeit
+        span.zeit Zeit
         .hr
-        .sandbox
-          | Eine Sandbox fuer
-        .pets
-          span.green P
-          ' rivacy
-          span.green E
-          ' nhancing
-          span.green T
-          ' echnologies (PETs)
-        .big implementieren
-        .hr style="margin-top: 14px;"
+        p.auswahl Kleine Auswahl
+        .pet-auswahl
+          /* .tor-orbot*/
+          /*   | Tor / Orbot*/
+          .middot &middot;
+          /* .datentrennung Datentrennung*/
 
-    #privacy-pets-daubert-ad-hoc.typo.smallfont.step data-x="7350" data-y="3070" data-rotate-z="-180"
-      p Ad-Hoc Information Exchange
-      .fadein
-        ul
-          li Verteilung der Messwerte über Ad-Hoc Netzwerk
-          li Jedes Android Gerät potentiell Verteiler
+      #privacy-tor-orbot-intro.typo.step data-x="7300" data-y="327" data-rotate-z="-180"
+        .pet-auswahl
+          .tor-orbot
+            | Tor / Orbot
+        .fadein
+          | Onion Routing Network
+          .images
+            img.logo src="img/tor-logo.svg"
+            img.network src="img/tor-network.jpg"
+
+      #privacy-tor-orbot-onion.typo.step data-x="7300" data-y="-500" data-rotate-z="-180"
+        .big Onion Routing
+        .bigsub Das Zwiebelschalenmodell
         .center
-          img src="img/beamwifi.png" height="230"
-    #privacy-pets-daubert-anonymize.typo.smallfont.step data-x="7350" data-y="2537" data-rotate-z="-180"
-      p Anonymisierung
-      .fadein
-        ul
-          li Datenserver erhält keine Nutzerinformationen
-          li Nutzerdaten werden anonymisiert
-          li Zero Knowledge Proof
+          img src="img/tor-package.svg" height="550"
+
+      #privacy-datentrennung-intro.typo.step data-x="6460" data-y="327" data-rotate-z="-180"
+        .pet-auswahl
+          .datentrennung
+            | Datentrennung
+        .fadein
+          .benutzerdaten Benutzerdaten
+          .hr
+          .arrows-up
+            .iconic.arrow_up
+            .iconic.arrow_up
+            .iconic.arrow_up
+            .iconic.arrow_up
+          .arrows-down
+            .iconic.arrow_down
+            .iconic.arrow_down
+            .iconic.arrow_down
+            .iconic.arrow_down
+          .hr
+          .messdaten Messwerte
+
+      #privacy-datentrennung-schema.typo.step data-x="6460" data-y="-400" data-rotate-z="-180"
+        p Authentification
         .center
-          | ?
-          img src="img/anonym.png" height="240"
-          | ?
-    #privacy-pets-daubert-modular.typo.smallfont.step data-x="7350" data-y="2004" data-rotate-z="-180"
-      p Forschung und Entwicklung
-      .fadein
-        ul
-          li Selbst nach Technologien suchen
-          li Implementierbarkeit der Technologien erforschen
-          li Eigene Ziele und Grenzen setzen
-        .center
-          pre
-            code.java
-              | public class Research extends Knowledge {
-                   public Research() {
-                      this.knowledge = Internet.getAllInformation();
-                   }
-                }
+          img src="img/authorization.svg" height="520"
 
-    #privacy-unsere-wahl.typo.step data-x="6800" data-y="950" data-rotate-z="-180" data-scale="2"
-      p Unser groeßtes Problem
-      .iconic.arrow_up.pets
-      span.pets  PETs 
-      .iconic.arrow_down.zeit
-      span.zeit Zeit
-      .hr
-      p.auswahl Kleine Auswahl
-      .pet-auswahl
-        /* .tor-orbot*/
-        /*   | Tor / Orbot*/
-        .middot &middot;
-        /* .datentrennung Datentrennung*/
-
-    #privacy-tor-orbot-intro.typo.step data-x="7300" data-y="327" data-rotate-z="-180"
-      .pet-auswahl
-        .tor-orbot
-          | Tor / Orbot
-      .fadein
-        | Onion Routing Network
-        .images
-          img.logo src="img/tor-logo.svg"
-          img.network src="img/tor-network.jpg"
-
-    #privacy-tor-orbot-onion.typo.step data-x="7300" data-y="-500" data-rotate-z="-180"
-      .big Onion Routing
-      .bigsub Das Zwiebelschalenmodell
-      .center
-        img src="img/tor-package.svg" height="550"
-
-    #privacy-datentrennung-intro.typo.step data-x="6460" data-y="327" data-rotate-z="-180"
-      .pet-auswahl
-        .datentrennung
-          | Datentrennung
-      .fadein
-        .benutzerdaten Benutzerdaten
+      #probleme-implementierung.typo.step  data-x="5900" data-y="-1300" data-rotate-z="-270"
+        .probleme
+          span.red Probleme 
+          | bei der
+        p Implementierung
+      #probleme-codebase.typo.step  data-x="5800" data-y="-1560" data-rotate-z="-270" data-scale="0.35"
+        .legacy Sehr viel Code
+        .probleme Gibt viele Probleme
         .hr
-        .arrows-up
-          .iconic.arrow_up
-          .iconic.arrow_up
-          .iconic.arrow_up
-          .iconic.arrow_up
-        .arrows-down
-          .iconic.arrow_down
-          .iconic.arrow_down
-          .iconic.arrow_down
-          .iconic.arrow_down
+        ul
+          li Lange Einarbeitungszeit
+          li Keine Dokumentation
+          li Keine automatisierten Tests
+          li Sehr unübersichtliche Codebase
+
+      #probleme-konsequenzen.typo.step  data-x="5800" data-y="-1020" data-rotate-z="-270" data-scale="0.35"
+        .konsequenzen Die maßnahmen
+        .radikal
+          ' waren teils etwas
+          span.red radikal
         .hr
-        .messdaten Messwerte
+        ul
+          li Neuschreiben des Servers
+          li Refactoring des Clients
+          li Umfangreiche Testsuite erstellen
+          li Ausführliche Dokumentation
 
-    #privacy-datentrennung-schema.typo.step data-x="6460" data-y="-400" data-rotate-z="-180"
-      p Authentication
-      .center
-        img src="img/authorization.svg" height="520"
+      #probleme-erfolge.typo.step  data-x="5550" data-y="-1020" data-rotate-z="-270" data-scale="0.35"
+        .durchaus Allerdings auch sehr
+        .erfolg erfolgreich
+        .hr
+        ul
+          li Viele Funktionen wieder implementiert
+          li Etliche PETs funktionsfähig
+          li Android Client generalüberholt
+          li 95% Test Coverage
+          li 4900+ Worte Dokumentation
 
-    #probleme-implementierung.typo.step  data-x="5900" data-y="-1300" data-rotate-z="-270"
-      .probleme
-        span.red Probleme 
-        | bei der
-      p Implementierung
-    #probleme-codebase.typo.step  data-x="5800" data-y="-1560" data-rotate-z="-270" data-scale="0.35"
-      .legacy Sehr viel Code
-      .probleme Gibt viele Probleme
-      .hr
-      .doku Keine Dokumentation
-      .test Keine automatisierten Tests
-
-    #probleme-konsequenzen.typo.step  data-x="5800" data-y="-1020" data-rotate-z="-270" data-scale="0.35"
-      .konsequenzen Die Konsequenzen
-      .radikal
-        ' waren teils etwas
-        span.red radikal
-      .hr
-      ul
-        li Neuschreiben des Servers
-        li Refactoring des Clients
-        li Umfangreiche Testsuite erstellen
-        li Ausführliche Dokumentation
-
-    .step data-x="4000" data-y="2400" data-z="10000"
+      .step data-x="4000" data-y="2400" data-z="10000"
 
 
-    /* #noisemap.step data-x="1000" data-y="-1500"*/
-    /*   p Was ist Noisemap*/
+      /* #noisemap.step data-x="1000" data-y="-1500"*/
+      /*   p Was ist Noisemap*/
 
-    /* #problem.step data-x="2000" data-y="-1500"*/
-    /*   p Was ist das Problem*/
+      /* #problem.step data-x="2000" data-y="-1500"*/
+      /*   p Was ist das Problem*/
 
-    /* #why_privacy.step data-x="3000" data-y="-1500"*/
-    /*   p Warum ist Privacy wichtig*/
+      /* #why_privacy.step data-x="3000" data-y="-1500"*/
+      /*   p Warum ist Privacy wichtig*/
 
-    /* #task1.step data-x="4000" data-y="-1500"*/
-    /*   p Unsere Aufgabe: PETs, Sandbox*/
+      /* #task1.step data-x="4000" data-y="-1500"*/
+      /*   p Unsere Aufgabe: PETs, Sandbox*/
 
-    /* #task2.step data-x="5000" data-y="-1500"*/
-    /*   p Unsere Aufgabe: Modularität*/
+      /* #task2.step data-x="5000" data-y="-1500"*/
+      /*   p Unsere Aufgabe: Modularität*/
 
-    /* #our_techs.step data-x="6000" data-y="-1500"*/
-    /*   p Titelfolie "Unsere Technologien"*/
+      /* #our_techs.step data-x="6000" data-y="-1500"*/
+      /*   p Titelfolie "Unsere Technologien"*/
 
-    /* #tor.step data-x="7000" data-y="-1500"*/
-    /*   p Tor/Orbot: kurz sinn erklären*/
+      /* #tor.step data-x="7000" data-y="-1500"*/
+      /*   p Tor/Orbot: kurz sinn erklären*/
 
-    /* #tor0.step data-x="7000" data-y="-4000"*/
+      /* #tor0.step data-x="7000" data-y="-4000"*/
 
-    /* #tor1.step data-scale="2" data-x="7000" data-y="-4000"*/
+      /* #tor1.step data-scale="2" data-x="7000" data-y="-4000"*/
 
-    /* #tor2.step data-scale="3" data-x="7000" data-y="-4000"*/
-    /*   p packetbild*/
+      /* #tor2.step data-scale="3" data-x="7000" data-y="-4000"*/
+      /*   p packetbild*/
 
-    /* .step data-scale="2" data-x="7000" data-y="-4000" id="tor1.1"*/
+      /* .step data-scale="2" data-x="7000" data-y="-4000" id="tor1.1"*/
 
-    /* .step data-scale="1" data-x="7000" data-y="-4000" id="tor0.1"*/
+      /* .step data-scale="1" data-x="7000" data-y="-4000" id="tor0.1"*/
 
-    /* #oauth.step data-x="8000" data-y="-1500"*/
-    /*   p OAuth*/
+      /* #oauth.step data-x="8000" data-y="-1500"*/
+      /*   p OAuth*/
 
 
 
@@ -277,6 +293,6 @@ html
 
 
 
-  // Das eigentliche Impress.js script
-  script src="js/impress.js"
-  script impress().init();
+    // Das eigentliche Impress.js script
+    script src="js/impress.js"
+    script impress().init();

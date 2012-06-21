@@ -95,6 +95,11 @@ pre {
     -o-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25); }
 
+ul {
+  margin-left: 1.2em;
+  list-style: disc;
+  font-size: 75%; }
+
 .step.typo {
   font-size: 80px;
   font-weight: bold;
@@ -102,16 +107,19 @@ pre {
   line-height: 130%;
   letter-spacing: -2px;
   text-shadow: 0 2px 1px rgba(255, 255, 255, 0.3); }
+  .step.typo ul {
+    font-size: 46px;
+    margin-top: 30px;
+    list-style: disc;
+    text-transform: none;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 160%; }
 
 .hr {
   height: 0px;
   border-top: 1px solid black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-
-ul {
-  margin-left: 1.2em;
-  list-style: disc;
-  font-size: 75%; }
 
 .step.smallfont {
   font-size: 36px; }
@@ -416,12 +424,7 @@ body.impress-on-privacy-unsere-aufgaben #privacy-pets-daubert-modular {
   #privacy-pets-daubert-ad-hoc ul,
   #privacy-pets-daubert-anonymize ul,
   #privacy-pets-daubert-modular ul {
-    margin-top: 30px;
-    list-style: disc;
-    text-transform: none;
-    font-weight: 400;
-    text-shadow: none;
-    line-height: 160%; }
+    font-size: 28px; }
     #privacy-pets-daubert-id ul li,
     #privacy-pets-daubert-ad-hoc ul li,
     #privacy-pets-daubert-anonymize ul li,
@@ -627,32 +630,43 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     line-height: 90%; }
 
 #probleme-codebase {
-  height: 600px; }
+  height: 600px;
+  padding-top: 0; }
   #probleme-codebase .legacy {
+    word-spacing: 6px;
     font-size: 106px;
     margin-top: 15px; }
   #probleme-codebase .hr {
     margin: 20px 0 6px 3px; }
   #probleme-codebase .probleme {
-    font-size: 78px; }
+    font-size: 78px;
+    word-spacing: 4px; }
   #probleme-codebase .doku {
     font-size: 70px; }
   #probleme-codebase .test {
     margin-top: -14px;
     font-size: 55px;
     word-spacing: 4px; }
+  #probleme-codebase .codebase {
+    font-size: 46px;
+    margin-top: -28px;
+    letter-spacing: -1px;
+    word-spacing: 7px; }
 
 #probleme-konsequenzen {
-  height: 600px; }
+  height: 620px;
+  padding-top: 0; }
   #probleme-konsequenzen .konsequenzen {
-    font-size: 84px; }
+    font-size: 92px; }
   #probleme-konsequenzen .radikal {
     font-size: 59px; }
-  #probleme-konsequenzen ul {
-    font-size: 46px;
-    margin-top: 30px;
-    list-style: disc;
-    text-transform: none;
-    font-weight: 400;
-    text-shadow: none;
-    line-height: 160%; }
+
+#probleme-erfolge {
+  height: 620px;
+  padding-top: 0; }
+  #probleme-erfolge .durchaus {
+    font-size: 71px; }
+  #probleme-erfolge .erfolg {
+    font-size: 126px;
+    margin: -5px 0 20px -9px;
+    color: #090; }
