@@ -603,7 +603,8 @@ body.impress-on-privacy-datentrennung-schema {
   .radikal {
     margin-top: -10px;
     margin-bottom: 15px;
-    font-size: 59px;
+    font-size: 58px;
+    letter-spacing: -1;
   }
 }
 
@@ -768,12 +769,101 @@ body.impress-on-privacy-datentrennung-schema {
   }
 }
 
-// #background-hack {
-//     position: absolute;
-//     z-index: 500;
-//     height: 100%;
-//     width: 100%;
-//     opacity: 0;
-//     background-image: url('../img/blur-hack.jpg');
-// }
+#technologien {
+  .technologien {
+    font-size: 58px;
+    word-spacing: 5px;
+    margin-bottom: -20px;
+  }
+  ul {
+    margin-top: 35px;
+    letter-spacing: 0;
+    font-size: 31px;
+  }
+  .col1 {
+    float: left;
+    width: 375px;
+  }
+  .col2 {
+    float: right;
+    width: 375px;
+  }
+  .client, .server {
+    margin-top: -5px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .impress {
+    font-size: 78px;
+    word-spacing: 7px;
+    margin-top: 25px;;
+  }
+
+  .hr {
+    clear: both;
+    position: relative;
+    top: 25px;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: normal;
+    font-family: "PT Serif"
+  }
+}
+
+#vielen-dank {
+  height: 340px;
+  position: relative;
+
+  .vielen, .dank, .fuer, .die, .aufmerksamkeit {
+    position: absolute;
+  }
+  .vielen {
+    font-size: 100px;
+    top: 0;
+    left: 50px;
+  }
+  .dank {
+    left: 42px;
+    top: 100px;
+    font-size: 118px;
+  }
+  .fuer {
+    top: 0;
+    right: 50px;
+    letter-spacing: 2px;
+    font-size: 100px;
+  }
+  .die {
+    top: 100px;
+    right: 39px;
+    font-size: 118px;
+    letter-spacing: 7px;
+  }
+  .aufmerksamkeit {
+    color: #070;
+    top: -25px;
+    font-size: 92px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    padding-top: 225px;
+    margin-bottom: 10px;
+  }
+  .thumb {
+    position: absolute;
+    top: 36px;
+    left: 445px;
+    width: 150px;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 36px;
+    top: 315px;
+  }
+}
 

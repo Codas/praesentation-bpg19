@@ -676,7 +676,8 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
   #probleme-konsequenzen .radikal {
     margin-top: -10px;
     margin-bottom: 15px;
-    font-size: 59px; }
+    font-size: 58px;
+    letter-spacing: -1; }
 
 #probleme-erfolge {
   padding-top: 0; }
@@ -790,3 +791,77 @@ body.impress-on-privacy-datentrennung-schema #privacy-tor-orbot-onion {
     font-size: 50px;
     font-weight: 600;
     text-shadow: 1px 1px 1px #444444, 2px 2px 1px #444444, 3px 3px 1px #444444, 4px 4px 3px black; }
+
+#technologien .technologien {
+  font-size: 58px;
+  word-spacing: 5px;
+  margin-bottom: -20px; }
+#technologien ul {
+  margin-top: 35px;
+  letter-spacing: 0;
+  font-size: 31px; }
+#technologien .col1 {
+  float: left;
+  width: 375px; }
+#technologien .col2 {
+  float: right;
+  width: 375px; }
+#technologien .client, #technologien .server {
+  margin-top: -5px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600; }
+#technologien .impress {
+  font-size: 78px;
+  word-spacing: 7px;
+  margin-top: 25px; }
+#technologien .hr {
+  clear: both;
+  position: relative;
+  top: 25px; }
+#technologien em {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PT Serif"; }
+
+#vielen-dank {
+  height: 340px;
+  position: relative; }
+  #vielen-dank .vielen, #vielen-dank .dank, #vielen-dank .fuer, #vielen-dank .die, #vielen-dank .aufmerksamkeit {
+    position: absolute; }
+  #vielen-dank .vielen {
+    font-size: 100px;
+    top: 0;
+    left: 50px; }
+  #vielen-dank .dank {
+    left: 42px;
+    top: 100px;
+    font-size: 118px; }
+  #vielen-dank .fuer {
+    top: 0;
+    right: 50px;
+    letter-spacing: 2px;
+    font-size: 100px; }
+  #vielen-dank .die {
+    top: 100px;
+    right: 39px;
+    font-size: 118px;
+    letter-spacing: 7px; }
+  #vielen-dank .aufmerksamkeit {
+    color: #070;
+    top: -25px;
+    font-size: 92px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    padding-top: 225px;
+    margin-bottom: 10px; }
+  #vielen-dank .thumb {
+    position: absolute;
+    top: 36px;
+    left: 445px;
+    width: 150px; }
+  #vielen-dank .bottom {
+    position: absolute;
+    left: 36px;
+    top: 315px; }
