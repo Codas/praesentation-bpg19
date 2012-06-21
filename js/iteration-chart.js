@@ -45,7 +45,9 @@
               color: "#ED561B"
             }
           },
-          opposite: true
+          opposite: true,
+          min: 0,
+          max: 4
         }
       ],
       tooltip: {
@@ -58,18 +60,6 @@
           }
         }
       },
-      labels: {
-        items: [
-          {
-            html: 'Total fruit consumption',
-            style: {
-              left: '40px',
-              top: '8px',
-              color: 'black'
-            }
-          }
-        ]
-      },
       series: [
         {
           type: 'column',
@@ -80,34 +70,16 @@
           name: 'Tatsächliche Zeit',
           data: [96, 63.81, 39.75]
         }, {
-          type: 'spline',
           name: 'Velocity',
           yAxis: 1,
           data: [3.43, 2.2, 1.89]
         }, {
-          type: 'pie',
-          name: 'Total consumption',
-          data: [
-            {
-              name: 'Jane',
-              y: 13,
-              color: '#4572A7'
-            }, {
-              name: 'John',
-              y: 23,
-              color: '#AA4643'
-            }, {
-              name: 'Joe',
-              y: 19,
-              color: '#89A54E'
-            }
-          ],
-          center: [100, 80],
-          size: 100,
+          color: "#ED561B",
+          dashStyle: "Dash",
+          yAxis: 1,
+          data: [1.89, 2],
           showInLegend: false,
-          dataLabels: {
-            enabled: false
-          }
+          pointStart: 2
         }
       ]
     });
